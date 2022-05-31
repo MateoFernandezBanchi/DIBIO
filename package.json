@@ -1,0 +1,13 @@
+{
+  "name": "dibio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"sass Scss/style.scss css/style.min.css -w --no-source-map -s compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
