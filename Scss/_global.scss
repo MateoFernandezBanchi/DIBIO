@@ -1,49 +1,88 @@
 @import "./variables";
-@font-face {
-    font-family: 'Helvetica';
-    src: local('Helvetica'),
-        url(../Fonts/HelveticaNowText.ttf),
-        format(ttf);
-  }
 
-    @font-face {
-        font-family: 'lemon_milk';
-        src: local('lemon_milk'),
-            url(../Fonts/lemon_milk/LEMONMILK-Bold.otf),
-            format(otf);
-        font-weight: bold;
-    }
+// LEMON MILK FONTS
+
+// TITULO
+@font-face {
+  font-family: "lemonMilkBold";
+  src: url("../Fonts/lemon_milk/LEMONMILK-Bold.otf");
+  font-style: bold;
+  font-weight: bold;
+}
+// SUBTITULO
+
+@font-face {
+  font-family: "lemonMilkRegular";
+  src: url("../Fonts/lemon_milk/LEMONMILK-Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+// SUBTITULO LIGHT
+@font-face {
+  font-family: "lemonMilkLight";
+  src: url("../Fonts/lemon_milk/LEMONMILK-Light.otf");
+  font-style: normal;
+  font-weight: lighter;
+}
+
+// HELVETICA
+
+// TEXTO
+
+@font-face {
+  font-family: "helveticaRegular";
+  src: url("../Fonts/HelveticaNowText-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+//  TEXTO 2
+
+@font-face {
+  font-family: "helveticaMedium";
+  src: url("../Fonts/HelveticaNowText-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+// TEXTO 3
+@font-face {
+  font-family: "helvetiaItalica";
+  src: url("../Fonts/HelveticaNowText-RegIta.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Hevetica';
+  font-family: "Hevetica";
 }
 ul li a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'Hevetica';
-    &:hover {
-        text-decoration: underline;
-    }
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Hevetica";
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 li {
-    list-style-type: none;
-    padding: 20px;
+  list-style-type: none;
+  padding: 20px;
 }
 
 ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 138px;
 }
 
 header {
-    background-color: $violetPrimary;
-   
+  background-color: $violetPrimary;
 }

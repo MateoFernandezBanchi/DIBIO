@@ -1,23 +1,24 @@
 @import "./global";
+@import "./_variables";
 
-.innovacionContainer{ 
-    display: flex;
-    .innovacionText {
-        width:50%;
-        h2 {
-            font-family: 'lemon_milk';
-            font-size: 70px;
-            font-weight: 700;
-            color: $violetPrimary;
-            line-height: 95px;
-            span {
-                color: $violetSecondary;
-            }
-        }
+.innovacionContainer {
+  display: flex;
+  .innovacionText {
+    width: 50%;
+    h2 {
+      font: $titulo;
+      font-size: 70px;
+      font-weight: 700;
+      color: $violetPrimary;
+      line-height: 95px;
+      span {
+        color: $violetSecondary;
+      }
     }
-    .innovacionImage {
-        img {
-            width: 303px;
-        }
+  }
+  .innovacionImage {
+    img {
+      width: 303px;
     }
-    }
+  }
+}
