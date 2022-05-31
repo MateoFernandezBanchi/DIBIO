@@ -1,11 +1,16 @@
 @import "./global";
+@import "./_variables";
 
 .innovacionContainer{ 
+    margin: 0 auto;
+    margin-top: 150px;
     display: flex;
+    width: 90%;
+    justify-content: center;
     .innovacionText {
         width:50%;
         h2 {
-            font-family: 'lemon_milk';
+            font: $titulo;
             font-size: 70px;
             font-weight: 700;
             color: $violetPrimary;
@@ -14,10 +19,20 @@
                 color: $violetSecondary;
             }
         }
+        p {
+            margin-top:40px;
+        }
     }
     .innovacionImage {
+        width: 50%;
         img {
-            width: 303px;
+            display: block;
+            width: 250px;
+            margin: 0 auto;
         }
+        .imgCelular {
+            width: 500px;
+        }
+        
     }
     }

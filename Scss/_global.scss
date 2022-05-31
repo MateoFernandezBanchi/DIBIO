@@ -1,31 +1,70 @@
 @import "./variables";
-@font-face {
-    font-family: 'Helvetica';
-    src: local('Helvetica'),
-        url(../Fonts/HelveticaNowText.ttf),
-        format(ttf);
-  }
+// LEMON MILK FONTS
 
-    @font-face {
-        font-family: 'lemon_milk';
-        src: local('lemon_milk'),
-            url(../Fonts/lemon_milk/LEMONMILK-Bold.otf),
-            format(otf);
-        font-weight: bold;
-    }
+// TITULO
+@font-face {
+    font-family: "lemonMilkBold";
+    src: url("../Fonts/lemon_milk/LEMONMILK-Bold.otf");
+    font-style: bold;
+    font-weight: bold;
+  }
+  // SUBTITULO
+  
+  @font-face {
+    font-family: "lemonMilkRegular";
+    src: url("../Fonts/lemon_milk/LEMONMILK-Regular.otf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  // SUBTITULO LIGHT
+  @font-face {
+    font-family: "lemonMilkLight";
+    src: url("../Fonts/lemon_milk/LEMONMILK-Light.otf");
+    font-style: normal;
+    font-weight: lighter;
+  }
+  
+  // HELVETICA
+  
+  // TEXTO
+
+@font-face {
+    font-family: "helveticaRegular";
+    src: url("../Fonts/HelveticaNowText-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  //  TEXTO 2
+  
+  @font-face {
+    font-family: "helveticaMedium";
+    src: url("../Fonts/HelveticaNowText-Medium.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  // TEXTO 3
+  @font-face {
+    font-family: "helvetiaItalica";
+    src: url("../Fonts/HelveticaNowText-RegIta.ttf");
+    font-style: normal;
+    font-weight: normal;
+  }
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body {
-    font-family: 'Hevetica';
+p {
+    font: $texto;
 }
 ul li a {
     font-size: 20px;
     text-decoration: none;
     color: #ffffff;
-    font-family: 'Hevetica';
+    font: $texto;
     &:hover {
         text-decoration: underline;
     }
@@ -40,10 +79,16 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 138px;
+    height: 100px;
 }
 
 header {
     background-color: $violetPrimary;
-   
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+main {
+    margin-top: 100px;
 }

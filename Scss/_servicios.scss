@@ -1,0 +1,22 @@
+
+.servicios {
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    .serviciosText {
+
+    h2 {
+        font: $titulo;
+            font-size: 70px;
+            font-weight: 700;
+            color: $violetPrimary;
+            line-height: 95px;
+    }
+    .serviciosImg {
+        img {
+            width: 250px;
+        }
+    }
+}}
