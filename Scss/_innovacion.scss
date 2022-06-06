@@ -1,38 +1,24 @@
 @import "./global";
 @import "./_variables";
 
-.innovacionContainer{ 
-    margin: 0 auto;
-    margin-top: 150px;
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    .innovacionText {
-        width:50%;
-        h2 {
-            font: $titulo;
-            font-size: 70px;
-            font-weight: 700;
-            color: $violetPrimary;
-            line-height: 95px;
-            span {
-                color: $violetSecondary;
-            }
-        }
-        p {
-            margin-top:40px;
-        }
+.innovacionContainer {
+  display: flex;
+  .innovacionText {
+    width: 50%;
+    h2 {
+      font: $titulo;
+      font-size: 70px;
+      font-weight: 700;
+      color: $violetPrimary;
+      line-height: 95px;
+      span {
+        color: $violetSecondary;
+      }
     }
-    .innovacionImage {
-        width: 50%;
-        img {
-            display: block;
-            width: 250px;
-            margin: 0 auto;
-        }
-        .imgCelular {
-            width: 500px;
-        }
-        
+  }
+  .innovacionImage {
+    img {
+      width: 303px;
     }
-    }
+  }
+}
