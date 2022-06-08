@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 .sucursalMainContainer {
@@ -11,13 +11,26 @@
 }
 .sucursalInformacion {
     overflow: scroll;
-    height: 50vh;
+    height: 60vh;
     width: 50%;
+    padding: 50px;
+    padding-top: 0;
 }
 .sucursalInformacion::-webkit-scrollbar {
     width: 10px;
     color: black;
   }
 .sucursalBotones {
-    width: 50%;
+    width: 40%;
+    background-color: $violetPrimary;
+    img {
+      width:60px;
+    }
+    
 }
+.sucursalBoton {
+  display: flex;
+  color: white;
+  text-decoration: none;
+}
+
