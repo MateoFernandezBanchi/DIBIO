@@ -1,12 +1,13 @@
 
 .servicios {
-    margin: 0 auto;
+    margin: 50px auto;
     margin-top: 100px;
     display: flex;
-    width: 90%;
+    flex-direction: column;
     justify-content: center;
     .serviciosText {
-
+        text-align: center;
+        margin-bottom: 50px;
     h2 {
         font: $titulo;
             font-size: 70px;
@@ -14,9 +15,42 @@
             color: $violetPrimary;
             line-height: 95px;
     }
+    p {
+        font-size: 20px;
+    }
     .serviciosImg {
         img {
             width: 250px;
         }
     }
-}}
+}
+.serviciosCardsContainer {
+    width: 100vw;
+    justify-content: center;
+}
+.serviciosCardsBackground {
+    width: 20%;
+    background-image: url("../Assets/imagenes2/scientist2.jpg");
+}
+.serviciosCards {
+    background-color: rgba($violetPrimary,0.5);
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 50%;
+        padding: 30px 0;
+    }
+    p {
+        color: white;
+        font-size: 30px;
+        font: $subtitulo;
+    }
+}
+
+}

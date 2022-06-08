@@ -3,6 +3,9 @@
 
 .innovacionContainer {
   display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;}
   .innovacionText {
     width: 50%;
     h2 {
@@ -18,7 +21,8 @@
   }
   .innovacionImage {
     img {
-      width: 303px;
+      width: 100%;
     }
+    
   }
-}
+

@@ -1,5 +1,4 @@
 @import "./variables";
-
 // LEMON MILK FONTS
 
 // TITULO
@@ -80,9 +79,13 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 138px;
+  height: 100px;
 }
 
 header {
   background-color: $violetPrimary;
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  width: 100vw;
 }

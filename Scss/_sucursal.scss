@@ -1,0 +1,23 @@
+.sucursalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+.sucursalMainContainer {
+    display: flex;
+    flex-direction: row;
+}
+.sucursalInformacion {
+    overflow: scroll;
+    height: 50vh;
+    width: 50%;
+}
+.sucursalInformacion::-webkit-scrollbar {
+    width: 10px;
+    color: black;
+  }
+.sucursalBotones {
+    width: 50%;
+}
