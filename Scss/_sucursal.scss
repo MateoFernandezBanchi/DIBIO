@@ -11,10 +11,13 @@
 }
 .sucursalInformacion {
     overflow: scroll;
-    height: 60vh;
+    height: 70vh;
     width: 50%;
     padding: 50px;
     padding-top: 0;
+     &__Opciones{
+      margin-bottom: 20px;
+    }
 }
 .sucursalInformacion::-webkit-scrollbar {
     width: 10px;
@@ -22,15 +25,23 @@
   }
 .sucursalBotones {
     width: 40%;
-    background-color: $violetPrimary;
+   
     img {
       width:60px;
     }
     
 }
+
 .sucursalBoton {
   display: flex;
-  color: white;
+  background-color: $violetPrimary;
+  color:white;
   text-decoration: none;
 }
-
+.btnWhite{
+  background-color: white;
+  color: $violetPrimary;
+}
+a {
+  text-decoration: none;
+}
