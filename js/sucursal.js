@@ -1,7 +1,7 @@
  export const SUCURSAL = [
     {
         id: 1,
-        title:"Morales",
+        title:"MORALES",
         description:"lorem ipsum dolor sit amet,lorem ipsum dolor, lorem ipsum dolor",
         subTitle: "lorem ipsum dolor sit amet",
         whatsapp1: 551231231,
