@@ -69,7 +69,10 @@ ul li a {
     text-decoration: underline;
   }
 }
-
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
 li {
   list-style-type: none;
   padding: 20px;

@@ -1,6 +1,7 @@
 .footerContainer {
     background-color: $violetPrimary;
     height: 50vh;
+    margin-top: 30px;
     div img {
         display: block;
         margin: 0 auto;
@@ -12,6 +13,7 @@
     display: flex;
     justify-content: center;
     gap: 40px;
+    margin: 30px 0;
 }
 .icono{
     color: $violetPrimary;
@@ -22,4 +24,10 @@
     font-size: 30px;
     padding: 10px;
     text-align: center;
+    // transition: .7s;
+    &:hover {
+    transform: scale(1.1);
+    background-color: #ad4c94;
+    color: white;
+    }
 }
