@@ -236,7 +236,7 @@
       </div>
       <div class="sucursalMainContainer">
         <div class="sucursalBotones" id="sucursalBotones">
-            <div class="sucursalBoton" id="sucursal1">
+            <div class="btnWhite" id="sucursal1">
               <div class="d-flex justify-content-center sucursalContent">
                 <div class="circle d-flex"><p>1</p></div>
                 <h4>SUCURSAL MORALES</h4>
@@ -263,12 +263,147 @@
         </div>
         <div class="sucursalInformacion" id="sucursalInformacion">
           <div class="test">
-            <div class="d-flex justify-content-center align-center">
-              <h3>Elija sucursal</h3>
-            </div>
+            <h4>SUCURSAL MORALES</h4>
+<p>lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<p>lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda itaque laudantium qui, beatae
+  temporibus dignissimos eaque, ipsam ullam, nemo doloribus esse deserunt odit aut possimus labore ea iusto
+  ut earum?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vero reprehenderit laborum, ratione
+  voluptate consequuntur voluptatibus praesentium eum optio corporis deserunt, qui eius sunt repellendus
+  error minima ipsa aut illo?</p>
+<h4>LOREM IPSUM DOLOR SIT</h4>
+<div class='row'>
+    <div class='col-6 d-flex'>
+      <div>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <div>
+        <p>${whatsapp1}</p>
+        <p>${whatsapp2}</p>
+      </div>
+    </div>
+    <div class='col-6'>
+      <div>
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <div>
+      <p>${direction}</p>
+      </div>
+    </div>
+    <div class='col-6'>
+      <div>
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <div>
+      <p>${email1}</p>
+      <p>${email2}</p>
+      </div>
+    </div>
+    <div class='col-6'>
+      <div>
+        <i class="fa-solid fa-phone-volume"></i>
+      </div>
+      <div>
+      <p>${telephone1}</p>
+      <p>${telephone2}</p>
+      <p>${telephone3}</p>
+      </div>
+    </div>
+
+</div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="contactContainer">
+      <div>
+        <h2>CONTACTATE</h2>
+      </div>
+      <div class="row contactMain">
+        <div class="col-6 contactSelector">
+          <h3>PASO 1 - ELIJA UNA SUCURSAL</h3>
+          <form action="">
+            <select name="selectSucursal" id="selectSucursal">
+              <option value="1">MORALES</option>
+              <option value="2">BELGRANO</option>
+              <option value="3">TISCORNIA</option>
+              <option value="4">INTECNUS</option>
+            </select>
+          </form>
+          <div id="contactInfo">
+            <div class="contactoInfo">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda itaque laudantium qui, beatae
+                temporibus dignissimos eaque, ipsam ullam, nemo doloribus esse deserunt odit aut possimus labore ea iusto
+                ut earum?</p>
+              
+              <h4>DATOS DE CONTACTO</h4>
+              <div class='row'>
+                  <div class='col-6'>
+                      <i class="fa-brands fa-whatsapp"></i>
+                  </div>
+                  <div class='col-6>
+                  <p>
+                      <span>${whatsapp1} /</span>
+                      <span>${whatsapp2}</span>
+                      </p>
+                  </div>
+                  </div>
+                  <div class='col-6'>
+                    <div>
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                    <p>${direction}</p>
+                    </div>
+                  </div>
+                  <div class='col-6'>
+                    <div>
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                    <p>${email1}</p>
+                    <p>${email2}</p>
+                    </div>
+                  </div>
+                  <div class='col-6'>
+                    <div>
+                      <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div>
+                    <p>${telephone1}</p>
+                    <p>${telephone2}</p>
+                    <p>${telephone3}</p>
+                    </div>
+                  </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contactForm col-6">
+          <form action="">
+            <div class="d-flex justify-content-center">
+              <div>
+                <input type="text" id="nombre" placeholder="NOMBRE">
+              </div>
+              <div> 
+                <input type="number" id="dni" placeholder="DNI">
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div> 
+                <input type="email" id="email" placeholder="EMAIL">
+              </div>
+              <div> 
+                <input type="text" id="asunto" placeholder="ASUNTO">
+              </div>
+            </div>
+            <div> 
+              <textarea id="mensaje" rows="3" placeholder="ESCRIBA SU MENSAJE"></textarea>
+            </div>
+            <button class="btnContacto" type="submit">ENVIAR CONSULTA</button>
+        </div>
     </section>
   </main>
   <footer>
@@ -302,6 +437,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
    <script type="module" src="./js/index.js"></script> 
+   <script type="module" src="./js/contacto.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 </body>
 
