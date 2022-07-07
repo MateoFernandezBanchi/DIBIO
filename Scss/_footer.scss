@@ -31,3 +31,10 @@
     color: white;
     }
 }
+
+// MOBILE
+.navFooter {
+    @include responsive(mobile){
+        display: none;
+    }
+}

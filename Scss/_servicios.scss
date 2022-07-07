@@ -1,5 +1,8 @@
 
 .servicios {
+    @include responsive(mobile) {
+        display: none;
+    }
     margin: 50px auto;
     margin-top: 100px;
     display: flex;
@@ -53,4 +56,64 @@
     }
 }
 
+}
+
+// MOBILE
+.serviciosMobile {
+    @include responsive(pc) {
+        display: none;
+    }
+    button {
+        color:white;
+    font:$texto;
+
+}
+.serviciosTitle {
+    width: 50%;
+margin: 0 auto;
+}
+h2 {
+    font: $titulo;
+        font-size: 30px;
+        font-weight: 700;
+        color: $violetPrimary;
+        line-height: 50px;
+        span {
+            color: $violetSecondary;
+        }
+}
+    .item1 h2 button{
+        background-color: #662483B2;
+        img {
+            width: 50px;
+        }
+    }
+    .item2 h2 button{
+        background-color: #772484B2;
+        img {
+            width: 50px;
+        }
+    }
+   
+    .item3 h2 button{
+        background-color: #872584B2;
+        img {
+            width: 50px;
+        }
+    }
+    
+    .item4 h2 button{
+      background-color: #982585B2;
+        img {
+            width: 50px;
+        }
+    }
+    
+    .item5 h2 button{
+        background-color: #A82585B2;
+        img {
+            width: 50px;
+        }
+    }
+    
 }

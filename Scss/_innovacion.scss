@@ -8,12 +8,20 @@
   margin: auto;}
   .innovacionText {
     width: 50%;
+    @include responsive(mobile){
+      width: 100%;      
+    }
     h2 {
       font: $titulo;
       font-size: 70px;
       font-weight: 700;
       color: $violetPrimary;
       line-height: 95px;
+      @include responsive(mobile) {
+         font-size:30px;
+          line-height:50px;
+          margin-top: 200px;
+      }
       span {
         color: $violetSecondary;
       }
@@ -22,7 +30,34 @@
   .innovacionImage {
     img {
       width: 100%;
+      @include responsive(mobile) {
+        display: none;
+        // position:absolute;
+        // top:900px;
+      }
     }
     
   }
 
+// MOBILE
+.innovacionFlexMobile {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  .imgInnovacion {
+    width:20%;
+    opacity: 0.5;
+    @include responsive(tablet){
+      display: none;
+    }
+  }
+}
+.imgCelular {
+  @include responsive(mobile) {
+    width:40vw;
+}
+  @include responsive(tablet){
+   display: none;
+  }
+}

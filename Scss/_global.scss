@@ -92,3 +92,17 @@ header {
   z-index: 20;
   width: 100vw;
 }
+.navDesktop {
+  @include responsive(mobile) {
+    display: none;
+  }
+}
+.navbarMobile {
+  @include responsive(tablet) {
+    display: none;
+  }
+  background-color: $violetPrimary;
+}
+.logoNavMobile {
+  width: 30%;
+}

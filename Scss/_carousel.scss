@@ -1,3 +1,8 @@
+.carouseles {
+  @include responsive(mobile) {
+    display: none;
+  }
+}
 .wrapper {
   position: absolute;
   bottom: 0;
