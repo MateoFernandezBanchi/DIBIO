@@ -33,7 +33,58 @@
 }
 .serviciosCardsBackground {
     width: 20%;
-    background-image: url("../Assets/imagenes2/scientist2.jpg");
+    flex:1;
+    // background-image: url("../Assets/imagenes2/scientist2.jpg");
+    transition: all 1s;
+    display: flex;
+}
+.back0 {
+    background-image: url("../Assets/imagenes2/background1.jpg");
+}
+.back1 {
+    background-image: url("../Assets/imagenes2/background2.jpg");
+}
+.back2 {
+    background-image: url("../Assets/imagenes2/background3.jpg");
+}
+.back3 {
+    background-image: url("../Assets/imagenes2/background4.jpg");
+}
+.back4 {
+    background-image: url("../Assets/imagenes2/background5.jpg");
+}
+.serviciosParrafo {
+    display: none;
+    
+    p {
+        font: $texto;
+        color: white;
+        font-size: 20px;
+    }
+}
+.serviciosCardsBackground:hover {
+    flex:80%;
+   
+    img {
+        width:100px;
+       margin-left: 5%;
+    }
+    h3 {
+        transform: rotate(270deg);
+
+        width: 80%;
+        // margin-left: 50%;
+    }
+    .serviciosCards {
+        align-items: flex-start;
+        gap: 150px;
+    }
+    .serviciosParrafo {
+        background-color: rgba($violetPrimary,0.5);
+    display: flex;
+    align-items: center;
+    height: 100%;
+    }
 }
 .serviciosCards {
     background-color: rgba($violetPrimary,0.5);
@@ -45,11 +96,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
     img {
         width: 50%;
         padding: 30px 0;
+    
     }
-    p {
+   
+    h3 {
         color: white;
         font-size: 30px;
         font: $subtitulo;
