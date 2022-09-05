@@ -21,20 +21,26 @@
     width:48%;
     font:$subtituloLight;
     font-size: 18px;
+    border-radius: 10px;
     h3 {
         font-size: 30px;
         padding:20px;
+        margin-left: 1rem;
     }
     p {
         color:white;
         padding:20px;
     }
+    form {
+      margin-left: 2rem;
+    }
 }
 .contactMain {
     background-color: $violetSecondary;
-    margin:60px 15px;
-    width: 100vw;
+    margin:60px auto;
+    width: 95vw;
     padding:50px;
+    border-radius: 10px;
 }
 input {
     padding: 10px 20px;
@@ -125,6 +131,7 @@ select {
     width:48%;
     padding:25px;
     margin: 0 auto;
+    border-radius: 10px;
     @include responsive(mobile) {
         display: none;
     }
@@ -132,6 +139,9 @@ select {
 .datosContacto {
     @include responsive(mobile) {
         display: none;
+    }
+    h3 {
+      margin-left:0;
     }
 }
 .datosContactoMobile {
@@ -196,11 +206,10 @@ select {
   .container input:checked ~ .checkmark:after {
     display: block;
   }
-  
   /* Style the indicator (dot/circle) */
   .container .checkmark:after {
-    top: 5px;
-    left: 4.5px;
+    top: 4.8px;
+    left: 4.7px;
     width: 16px;
     height: 16px;
     border-radius: 50%;

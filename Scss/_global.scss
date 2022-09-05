@@ -59,6 +59,7 @@
 }
 body {
   font:$texto;
+  overflow-x: hidden;
 }
 ul li a {
   font-size: 20px;
@@ -86,15 +87,25 @@ ul {
 }
 
 header {
-  background-color: $violetPrimary;
   position: fixed;
   top: 0;
   z-index: 20;
   width: 100vw;
 }
 .navDesktop {
+  width: 100vw;
+  .waveNav {
+    width:100vw;
+    position:relative;
+    bottom:80px;
+  }
   @include responsive(mobile) {
     display: none;
+  }
+  ul {
+    position: relative;
+    z-index:10;
+    background-color: $violetPrimary;
   }
   ul a {
   font:$texto;}

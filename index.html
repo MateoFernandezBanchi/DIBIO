@@ -31,6 +31,7 @@
         <li><a href="">SUCURSALES</a></li>
         <li><a href="">CONTACTO</a></li>
       </ul>
+      <img class="waveNav" src="./Assets/imagenes/waveNav.png" alt="">
     </nav>
     <!-- NAVBAR MOBILE -->
     <nav class="navbar navbar-expand-lg navbar-dark navbarMobile">
@@ -551,6 +552,7 @@
           <h3>PASO 1 - ELIJA UNA SUCURSAL</h3>
           <p>Selecciona la sucursal más cercana a tu domicilio, para obtener una atención personalizada.
           </p>
+          <!-- FORMULARIO CONTACTO -->
           <form action="">
             <select name="selectSucursal" id="selectSucursal">
               <option value="1">MORALES</option>
@@ -558,36 +560,35 @@
               <option value="3">TISCORNIA</option>
               <option value="4">INTECNUS</option>
             </select>
-          </form>
-          <div id="contactInfo">
+
+            <div id="contactInfo">
               <div class='row datosContacto'>
-                <h4>PASO 2 - ELIJA EL MOTIVO DE CONSULTA</h4>
+                <h3>PASO 2 - ELIJA EL MOTIVO DE CONSULTA</h3>
                 <P>Elije el motivo de tu consulta para poder derivarte al aréa correspondiente.
                 </P>
               </div>
               <label class="container"> CONSULTAS
-                <input type="checkbox" checked="checked">
+                <input type="checkbox" checked='true' name="check" onclick="onlyOne(this)">
                 <span class="checkmark"></span>
               </label>
-              
+
               <label class="container"> SOLICITAR TURNO
-                <input type="checkbox">
+                <input type="checkbox" name="check" onclick="onlyOne(this)">
                 <span class="checkmark"></span>
               </label>
-              
+
               <label class="container"> EXTRACCION A DOMICILIO
-                <input type="checkbox">
+                <input type="checkbox" name="check" onclick="onlyOne(this)">
                 <span class="checkmark"></span>
               </label>
-              
+
               <label class="container"> QUIERO TRABAJAR CON USTEDES
-                <input type="checkbox">
+                <input type="checkbox" name="check" onclick="onlyOne(this)">
                 <span class="checkmark"></span>
               </label>
+            </div>
           </div>
-        </div>
-        <div class="contactForm col-md-6 col-sm-12">
-          <form action="">
+          <div class="contactForm col-md-6 col-sm-12">
             <div class="d-flex justify-content-center">
               <div>
                 <input type="text" id="nombre" placeholder="NOMBRE">
@@ -608,9 +609,10 @@
               <textarea id="mensaje" rows="3" placeholder="ESCRIBA SU MENSAJE"></textarea>
             </div>
             <button class="btnContacto" type="submit">ENVIAR CONSULTA</button>
-        </div>
-    </section>
-  </main>
+          </div>
+        </form>
+        </section>
+      </main>
   <footer>
     <div class="footerContainer">
       <div>
@@ -648,7 +650,7 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./carousel/slick-1.8.1/slick/slick.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./carousel/index.js"></script>
@@ -674,6 +676,14 @@
         clickable: true,
       },
     });
+  </script>
+  <script>
+    function onlyOne(checkbox) {
+      const checkboxes = document.getElementsByName('check')
+      checkboxes.forEach((item) => {
+        if (item !== checkbox) item.checked = false
+      })
+    }
   </script>
 </body>
 
