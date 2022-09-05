@@ -58,7 +58,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Hevetica";
+  font:$texto;
 }
 ul li a {
   font-size: 20px;
@@ -96,6 +96,8 @@ header {
   @include responsive(mobile) {
     display: none;
   }
+  ul a {
+  font:$texto;}
 }
 .navbarMobile {
   @include responsive(tablet) {

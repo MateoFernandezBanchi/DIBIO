@@ -19,10 +19,6 @@ function getSelectValue() {
 function printInfo(valueNumber) {
     const sucursalSelected = SUCURSAL.find(sucursal => sucursal.id === valueNumber);
     const {
-        id,
-        title,
-        description,
-        subTitle,
         whatsapp1,
         whatsapp2,
         direction,
@@ -36,52 +32,9 @@ function printInfo(valueNumber) {
     infoSucursal.className = 'contactoInfo';
     cleaner();
     infoSucursal.innerHTML = `
+<h4>PASO 2 - ELIJA MOTIVO DE CONSULTA</h4>
 
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda itaque laudantium qui, beatae
-  temporibus dignissimos eaque, ipsam ullam, nemo doloribus esse deserunt odit aut possimus labore ea iusto
-  ut earum?</p>
-
-<h4>DATOS DE CONTACTO</h4>
-<div class='row'>
-    <div class='col-6'>
-        <i class="fa-brands fa-whatsapp"></i>
-    </div>
-    <div class='col-6>
-    <p>
-        <span>${whatsapp1} /</span>
-        <span>${whatsapp2}</span>
-        </p>
-    </div>
-    </div>
-    <div class='col-6'>
-      <div>
-        <i class="fa-solid fa-location-dot"></i>
-      </div>
-      <div>
-      <p>${direction}</p>
-      </div>
-    </div>
-    <div class='col-6'>
-      <div>
-        <i class="fa-solid fa-envelope"></i>
-      </div>
-      <div>
-      <p>${email1}</p>
-      <p>${email2}</p>
-      </div>
-    </div>
-    <div class='col-6'>
-      <div>
-        <i class="fa-solid fa-phone-volume"></i>
-      </div>
-      <div>
-      <p>${telephone1}</p>
-      <p>${telephone2}</p>
-      <p>${telephone3}</p>
-      </div>
-    </div>
-
-</div>`;
+`;
     contactInfo.appendChild(infoSucursal);
 }
 

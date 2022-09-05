@@ -8,6 +8,9 @@
         width: 300px;
         padding-top: 50px;
     }
+    a {
+        font:$texto;
+    }
 }
 .iconsContainer {
     display: flex;
