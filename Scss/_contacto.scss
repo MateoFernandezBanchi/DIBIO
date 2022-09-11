@@ -1,55 +1,85 @@
 .contactContainer {
-    h2 {
-        font: $titulo;
-      font-size: 70px;
-      font-weight: 700;
-      color: $violetPrimary;
-      line-height: 95px; 
-      text-align: center;
-      @include responsive(mobile) {
-        font-size:30px;
-         line-height:50px;
-         margin-top: 200px;
-     }
+  h2 {
+    font: $titulo;
+    font-size: 55px;
+    font-weight: 700;
+    color: $violetPrimary;
+    line-height: 95px;
+    text-align: center;
+
+    @include responsive(mobile) {
+      font-size: 30px;
+      line-height: 50px;
+      margin-top: 200px;
     }
+  }
 }
 
 .contactSelector {
-    background-color: $violetPrimary;
+  background-color: $violetPrimary;
+  color: white;
+  padding: 30px;
+  width: 48%;
+  font: $subtituloLight;
+  font-size: 18px;
+  border-radius: 10px;
+
+  h3 {
+    font-size: 30px;
+    padding: 20px;
+    margin-left: 1rem;
+  }
+
+  p {
     color: white;
-    padding: 30px;
-    width:48%;
-    font:$subtituloLight;
-    font-size: 18px;
-    border-radius: 10px;
+    padding: 20px;
+  }
+
+  form {
+    margin-left: 2rem;
+  }
+
+  @include responsive(mobile) {
+    width: 100vw;
+    padding: 15px;
+    h3, p, form {
+      padding:5px;
+      margin: 20px 0;
+    }
     h3 {
-        font-size: 30px;
-        padding:20px;
-        margin-left: 1rem;
+      font-size: 20px;
+      
     }
-    p {
-        color:white;
-        padding:20px;
+    .datosContacto {
+      margin-left: 0px;
     }
-    form {
-      margin-left: 2rem;
-    }
+  }
 }
+
 .contactMain {
-    background-color: $violetSecondary;
-    margin:60px auto;
-    width: 95vw;
-    padding:50px;
-    border-radius: 10px;
+  position: relative;
+  background-color: $violetSecondary;
+  margin: 60px auto;
+  width: 95vw;
+  padding: 50px;
+  border-radius: 10px;
+
+  @include responsive(mobile) {
+    padding: 15px;
+    width: 100vw;
+    overflow-x: hidden;
+  }
 }
+
 input {
-    padding: 10px 20px;
-    border: none;
-    border-bottom: 3px solid $violetSecondary;
-    margin: 20px;
-    outline: none;
-    width: 80%;
+  padding: 10px 20px;
+  border: none;
+  border-bottom: 3px solid $violetSecondary;
+  margin: 20px;
+  outline: none;
+  width: 80%;
 }
+
 // input:focus {
 //     border: none;
 // }
@@ -57,161 +87,190 @@ input {
 //     border: none;
 // }
 textarea {
-    border: none;
-    border-bottom: 3px solid $violetSecondary;
-    padding:50px;
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-    outline: none;
+  border: none;
+  border-bottom: 3px solid $violetSecondary;
+  padding: 50px;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  outline: none;
 }
 
 .btnContacto {
-    padding:15px 20px;
-    background-color: $violetPrimary;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font:$texto;
-    display: block;
-    margin: 20px auto
+  padding: 15px 20px;
+  background-color: $violetPrimary;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font: $texto;
+  display: block;
+  margin: 20px auto
 }
+
 .btnContacto2 {
-    background-color: $violetSecondary;
-    width: 240px;
+  background-color: $violetSecondary;
+  width: 240px;
 }
+
 select {
-    -webkit-appearance:none;
-    -moz-appearance:none;
-    -ms-appearance:none;
-    appearance:none;
-    outline:0;
-    box-shadow:none;
-    border:none;
-    border-bottom: 2px solid white;
-    background: $violetPrimary;
-    background-image: none;
-    flex: 1;
-    padding: 0 .5em;
-    color:#fff;
-    cursor:pointer;
-    font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
- }
- select::-ms-expand {
-    display: none;
- }
- .select {
-    position: relative;
-    display: flex;
-    width: 20em;
-    height: 3em;
-    line-height: 3;
-    overflow: hidden;
-    border-radius: .25em;
-    margin-bottom: 50px;
- }
- .select::after {
-    content: '\25BC';
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0 1em;
-    background: none;
-    cursor:pointer;
-    pointer-events:none;
-    transition:.25s all ease;
- }
- .select:hover::after {
-    color: $violetSecondary;
- }
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 2px solid white;
+  background: $violetPrimary;
+  background-image: none;
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: .25em;
+  margin-bottom: 50px;
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: none;
+  cursor: pointer;
+  pointer-events: none;
+  transition: .25s all ease;
+}
+
+.select:hover::after {
+  color: $violetSecondary;
+}
+
 // MOBILE
 .contactForm {
+  background-color: white;
+  width: 48%;
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  @include responsive(mobile) {
     background-color: white;
-    width:48%;
-    padding:25px;
-    margin: 0 auto;
-    border-radius: 10px;
-    @include responsive(mobile) {
-        display: none;
-    }
+    position: absolute;
+    width: 90%;
+    height: 93%;
+    top: 20px;
+    transform: translateX(450px);
+    transition: 1s;
+  }
 }
+
+.contactFormChanged {
+  @include responsive(mobile) {
+    background-color: white;
+    position: absolute;
+    width: 90%;
+    height: 93%;
+    top: 20px;
+    transform: translateX(0px);
+    transition: 1s;
+  }
+}
+
 .datosContacto {
-    @include responsive(mobile) {
-        display: none;
-    }
-    h3 {
-      margin-left:0;
-    }
+  h3 {
+    margin-left: 0;
+  }
 }
+
 .datosContactoMobile {
-    @include responsive(tablet) {
-        display: none;
-    }
+  @include responsive(tablet) {
+    display: none;
+  }
 }
 
 // CHECKBOX
 
 .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  @include responsive(mobile) {
+    font-size: 16px;
   }
-  
-  /* Hide the browser's default radio button */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom radio button */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the radio button is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    background-color: white;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  /* Style the indicator (dot/circle) */
-  .container .checkmark:after {
-    top: 4.8px;
-    left: 4.7px;
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background: $violetSecondary;
-  }
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: white;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 4.8px;
+  left: 4.7px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: $violetSecondary;
+}

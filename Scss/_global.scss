@@ -60,6 +60,9 @@
 body {
   font:$texto;
   overflow-x: hidden;
+  @include responsive(mobile) {
+    max-width:$mobile;
+  }
 }
 ul li a {
   font-size: 20px;

@@ -36,6 +36,7 @@
 }
 
 .sucursalBotones {
+  cursor: pointer;
   display: flex;
   align-items: flex-end;
   height:10rem;
@@ -43,17 +44,22 @@
   img {
     width: 60px;
   }
+  h3 {
+    display:none;
+  }
 }
 
 .sucursalContent {
   cursor: pointer;
   padding: 30px;
   width: 100%;
+  height:100%;
   text-align: center;
   font: $subtitulo;
 }
 
 .sucursalBoton {
+  cursor: pointer;
   display: flex;
   height:70%;
   color: white;
@@ -67,11 +73,18 @@
 }
 
 .btnWhite {
+  cursor: pointer;
   padding: 20px;
   height:100%;
   color:white;
   width: 33.33%;
   border-radius: 10px 10px 0 0 ;
+  h3 {
+    display: block;
+    font-size: 20px;
+    text-align: left;
+    margin-left:6.6rem;
+  }
 }
 #sucursal1 {
   background-color: #A82585;

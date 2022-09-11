@@ -1,114 +1,131 @@
-
 .servicios {
     @include responsive(mobile) {
         display: none;
     }
+
     margin: 50px auto;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     .serviciosText {
         text-align: center;
         margin-bottom: 50px;
-    h2 {
-        font: $titulo;
-            font-size: 70px;
+
+        h2 {
+            font: $titulo;
+            font-size: 55px;
             font-weight: 700;
             color: $violetPrimary;
             line-height: 95px;
-    }
-    p {
-        font-size: 20px;
-    }
-    .serviciosImg {
-        img {
-            width: 250px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .serviciosImg {
+            img {
+                width: 250px;
+            }
         }
     }
-}
-.serviciosCardsContainer {
-    width: 100vw;
-    justify-content: center;
-}
-.serviciosCardsBackground {
-    width: 20%;
-    flex:1;
-    // background-image: url("../Assets/imagenes2/scientist2.jpg");
-    transition: all 1s;
-    display: flex;
-}
-.back0 {
-    background-image: url("../Assets/imagenes2/background1.jpg");
-}
-.back1 {
-    background-image: url("../Assets/imagenes2/background2.jpg");
-}
-.back2 {
-    background-image: url("../Assets/imagenes2/background3.jpg");
-}
-.back3 {
-    background-image: url("../Assets/imagenes2/background4.jpg");
-}
-.back4 {
-    background-image: url("../Assets/imagenes2/background5.jpg");
-}
-.serviciosParrafo {
-    display: none;
-    
-    p {
-        font: $texto;
-        color: white;
-        font-size: 20px;
-    }
-}
-.serviciosCardsBackground:hover {
-    flex:80%;
-   
-    img {
-        width:100px;
-       margin-left: 5%;
-    }
-    h3 {
-        transform: rotate(270deg);
 
-        width: 80%;
-        // margin-left: 50%;
+    .serviciosCardsContainer {
+        width: 100vw;
+        justify-content: center;
     }
-    .serviciosCards {
-        align-items: flex-start;
-        gap: 150px;
+
+    .serviciosCardsBackground {
+        width: 20%;
+        flex: 1;
+        // background-image: url("../Assets/imagenes2/scientist2.jpg");
+        transition: all 1s;
+        display: flex;
     }
+
+    .back0 {
+        background-image: url("../Assets/imagenes2/background1.jpg");
+    }
+
+    .back1 {
+        background-image: url("../Assets/imagenes2/background2.jpg");
+    }
+
+    .back2 {
+        background-image: url("../Assets/imagenes2/background3.jpg");
+    }
+
+    .back3 {
+        background-image: url("../Assets/imagenes2/background4.jpg");
+    }
+
+    .back4 {
+        background-image: url("../Assets/imagenes2/background5.jpg");
+    }
+
     .serviciosParrafo {
-        background-color: rgba($violetPrimary,0.5);
-    display: flex;
-    align-items: center;
-    height: 100%;
+        display: none;
+
+        p {
+            font: $texto;
+            color: white;
+            font-size: 20px;
+        }
     }
-}
-.serviciosCards {
-    background-color: rgba($violetPrimary,0.5);
-    width: 100%;
-    height: 90vh;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- 
-    img {
-        width: 50%;
-        padding: 30px 0;
-    
+
+    .serviciosCardsBackground:hover {
+        flex: 80%;
+
+        img {
+            width: 100px;
+            margin-left: 5%;
+        }
+
+        h3 {
+            transform: rotate(270deg);
+
+            width: 80%;
+            // margin-left: 50%;
+        }
+
+        .serviciosCards {
+            align-items: flex-start;
+            gap: 150px;
+        }
+
+        .serviciosParrafo {
+            background-color: rgba($violetPrimary, 0.5);
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
     }
-   
-    h3 {
-        color: white;
-        font-size: 30px;
-        font: $subtitulo;
+
+    .serviciosCards {
+        background-color: rgba($violetPrimary, 0.5);
+        width: 100%;
+        height: 90vh;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 50%;
+            padding: 30px 0;
+
+        }
+
+        h3 {
+            color: white;
+            font-size: 30px;
+            font: $subtitulo;
+        }
     }
-}
 
 }
 
@@ -117,57 +134,68 @@
     @include responsive(pc) {
         display: none;
     }
-    button {
-        color:white;
-    font:$texto;
 
-}
-.serviciosTitle {
-    width: 50%;
-margin: 0 auto;
-}
-h2 {
-    font: $titulo;
+    button {
+        color: white;
+        font: $texto;
+
+    }
+
+    .serviciosTitle {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font: $titulo;
         font-size: 30px;
         font-weight: 700;
         color: $violetPrimary;
         line-height: 50px;
+
         span {
             color: $violetSecondary;
         }
-}
-    .item1 h2 button{
+    }
+
+    .item1 h2 button {
         background-color: #662483B2;
+
         img {
             width: 50px;
         }
     }
-    .item2 h2 button{
+
+    .item2 h2 button {
         background-color: #772484B2;
+
         img {
             width: 50px;
         }
     }
-   
-    .item3 h2 button{
+
+    .item3 h2 button {
         background-color: #872584B2;
+
         img {
             width: 50px;
         }
     }
-    
-    .item4 h2 button{
-      background-color: #982585B2;
+
+    .item4 h2 button {
+        background-color: #982585B2;
+
         img {
             width: 50px;
         }
     }
-    
-    .item5 h2 button{
+
+    .item5 h2 button {
         background-color: #A82585B2;
+
         img {
             width: 50px;
         }
     }
-    
+
 }
