@@ -37,44 +37,28 @@ function printInfo(sucursalSelected) {
   infoSucursal.className = 'test';
   cleaner();
   infoSucursal.innerHTML = `
-<div class='row'>
-    <div class='col-6 d-flex'>
-      <div>
-        <i class="fa-brands fa-whatsapp"></i>
-      </div>
-      <div>
-        <p>${whatsapp1}</p>
-        <p>${whatsapp2}</p>
-      </div>
-    </div>
-    <div class='col-6'>
-      <div>
-        <i class="fa-solid fa-location-dot"></i>
-      </div>
-      <div>
-      <p>${direction}</p>
-      </div>
-    </div>
-    <div class='col-6'>
-      <div>
-        <i class="fa-solid fa-envelope"></i>
-      </div>
-      <div>
-      <p>${email1}</p>
-      <p>${email2}</p>
-      </div>
-    </div>
-    <div class='col-6'>
-      <div>
-        <i class="fa-solid fa-phone-volume"></i>
-      </div>
-      <div>
-      <p>${telephone1}</p>
-      <p>${telephone2}</p>
-      <p>${telephone3}</p>
-      </div>
-    </div>
+  <div>
+  <div class='d-flex align-items-center contactoSucursal'>
+    <i class="fa-solid fa-phone-volume"></i>
+    <p>${telephone1} / ${telephone2}  </p>
+  </div>
+  <div class='d-flex align-items-center contactoSucursal'>
+    <i class="fa-brands fa-whatsapp"></i>
+    <p>${whatsapp1} / ${whatsapp2}  / 0294 4335325</p>
+  </div>
+  <div class='d-flex align-items-center contactoSucursal'>
+    <i class="fa-solid fa-envelope"></i>
+    <p>${email1}- ${email2}</p>
 
+  </div>
+</div>
+<div class="ubicacionSucursal">
+  <img src="./Assets/imagenes/logoUbicacion.png" alt="Icono ubicacion">
+  <h4>¿CÓMO LLEGAR?</h4>
+  <p class="p1">${direction}</p>
+  <p class="p2">SAN CARLOS DE BARILOCHE</p>
+  <p class="p3">RÍO NEGRO, ARGENTINA</p>
+</div>
 </div>`;
   contenedor.appendChild(infoSucursal);
 }

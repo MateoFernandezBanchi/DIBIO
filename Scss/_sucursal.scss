@@ -20,7 +20,6 @@
 
 .sucursalInformacion {
   overflow: hidden;
-  height: 90vh;
   width: 100vw;
   padding: 50px;
   padding-top: 0;
@@ -101,13 +100,55 @@ a {
 
 .test {
   font: $texto;
-
+  display:flex;
+  margin: 50px auto;
+  justify-content: space-between;
+  width:80vw;
   h4 {
     color: $violetSecondary;
     font-size: 30px;
   }
+  p {
+    margin:0;
+    margin-left:20px;
+    font-size: 25px;
+  }
 }
+.contactoSucursal {
+  margin: 25px auto;
+}
+.fa-solid, .fa-brands {
+  font-size:35px;
+  color:$violetSecondary;
 
+}
+.ubicacionSucursal {
+  position:relative;
+  bottom:250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 40vw;
+  h4 {
+    font:$titulo;
+    font-size: 20px;
+    color: $violetSecondary;
+    font-weight: bold;
+  }
+  p {
+    margin: 5px auto;
+  }
+  .p1 {
+    font-size: 30px;
+  }
+  .p2 {
+    font-size:23px;
+  }
+  .p3{
+    font-size: 20px;
+  }
+}
 // MOBILE
 .sucursalesMobile {
   @include responsive(tablet) {
