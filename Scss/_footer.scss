@@ -1,4 +1,5 @@
 .footerContainer {
+
     background-color: $violetPrimary;
     height: 50vh;
     margin-top: 30px;
@@ -37,6 +38,7 @@
 
 // MOBILE
 .navFooter {
+    margin-top: 50px;
     @include responsive(mobile){
         display: none;
     }

@@ -37,7 +37,7 @@ function printInfo(sucursalSelected) {
   infoSucursal.className = 'test';
   cleaner();
   infoSucursal.innerHTML = `
-  <div>
+  <div class="contactoSucursales">
   <div class='d-flex align-items-center contactoSucursal'>
     <i class="fa-solid fa-phone-volume"></i>
     <p>${telephone1} / ${telephone2}  </p>
@@ -53,7 +53,7 @@ function printInfo(sucursalSelected) {
   </div>
 </div>
 <div class="ubicacionSucursal">
-  <img src="./Assets/imagenes/logoUbicacion.png" alt="Icono ubicacion">
+  <img class='logoUbicacion' src="./Assets/imagenes/logoUbicacion.png" alt="Icono ubicacion">
   <h4>¿CÓMO LLEGAR?</h4>
   <p class="p1">${direction}</p>
   <p class="p2">SAN CARLOS DE BARILOCHE</p>

@@ -1,4 +1,11 @@
 .contactContainer {
+  .parrafoIntroContacto {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+  }
   h2 {
     font: $titulo;
     font-size: 55px;
@@ -6,7 +13,8 @@
     color: $violetPrimary;
     line-height: 95px;
     text-align: center;
-
+    width: 50%;
+    margin: 0 auto;
     @include responsive(mobile) {
       font-size: 30px;
       line-height: 50px;
@@ -110,6 +118,12 @@ textarea {
 .btnContacto2 {
   background-color: $violetSecondary;
   width: 240px;
+}
+.btnSiguiente {
+  display:none;
+  @include responsive(mobile) {
+    display:block;
+  }
 }
 .btnAtras {
   @include responsive(mobile) {

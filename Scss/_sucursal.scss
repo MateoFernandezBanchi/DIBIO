@@ -6,7 +6,7 @@
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-
+  max-height: 1400px;
   //  @include responsive(mobile) {
   //   //  max-height: 130vh;
   //  }
@@ -126,9 +126,11 @@ a {
 .test {
   font: $texto;
   display:flex;
-  margin: 50px auto;
+  margin: 50px auto 0px auto;
   justify-content: space-between;
   width:80vw;
+  position:relative;
+  bottom:250px;
   h4 {
     color: $violetSecondary;
     font-size: 30px;
@@ -162,8 +164,8 @@ a {
 
 }
 .ubicacionSucursal {
-  position:relative;
-  bottom:250px;
+  position: relative;
+  bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,4 +251,26 @@ a {
   @include responsive(mobile) {
     width: 100vw;
   }
+}
+.contactoSucursales {
+  height: 40vh;
+  margin-top: 150px;
+}
+.sucursalTitle {
+  position: relative;
+  bottom: 160px;
+  font: $titulo;
+  color: white;
+  font-size: 40px;
+  width: 40%;
+  margin-left:80px;
+}
+.logoUbicacion {
+  animation: logoAnimado 5s infinite;
+}
+
+@keyframes logoAnimado {
+  0%   {transform: translateY(-20px);}
+   50% {transform: translateY(30px)}
+  100%  {transform: translateY(-20px);}
 }

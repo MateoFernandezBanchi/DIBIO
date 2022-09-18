@@ -403,9 +403,12 @@
       </div>
       <!-- INFORMACION -->
       <div class="sucursalInformacion" id="sucursalInformacion">
-        <img src="./Assets/imagenes/casa-central-dibio 1.png" alt="casa central dibio" class="imgCentral">
+        <div>
+          <img src="./Assets/imagenes/casa-central-dibio 1.png" alt="casa central dibio" class="imgCentral">
+          <h4 class="sucursalTitle"> NUESTROS MEDIOS <br> DE CONTACTO</h4>
+        </div>
         <div class="test">
-          <div>
+          <div class="contactoSucursales">
             <div class='d-flex align-items-center contactoSucursal'>
               <i class="fa-solid fa-phone-volume"></i>
               <p>+54 294 4546758 / +54 294 5343433 </p>
@@ -421,7 +424,7 @@
             </div>
           </div>
           <div class="ubicacionSucursal">
-            <img src="./Assets/imagenes/logoUbicacion.png" alt="Icono ubicacion">
+            <img class="logoUbicacion" src="./Assets/imagenes/logoUbicacion.png" alt="Icono ubicacion">
             <h4>¿CÓMO LLEGAR?</h4>
             <p class="p1">MORALES 645</p>
             <p class="p2">SAN CARLOS DE BARILOCHE</p>
@@ -431,114 +434,11 @@
       </div>
     </section>
 
-    <!------------------------- SUCURSALES MOBILE ----------------------------------->
-    <!-- 
-    <section class="sucursalesMobile">
-      <div id="carouselExampleControls" data-bs-interval="false" data-bs-touch="false" class="carousel slide"
-        data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class=" carouselSucursal">
-              <div class="d-flex">
-                <img class="d-block" src="./Assets/imagenes/logo.png" alt="First slide">
-                <div>
-                  <h3>SUCURSAL MORALES</h3>
-                  <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-                </div>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eaque temporibus laboriosam laudantium
-                facilis</p>
-              <p> nemo, officia cupiditate sit tempora veniam ipsum tempore ipsa dolores quibusdam facere a ad. Aliquid,
-                aspernatur.</p>
-              <ul class="iconsMobile">
-                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-location-dot"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-phone-volume"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class=" carouselSucursal">
-              <div class="d-flex">
-                <img class="d-block" src="./Assets/imagenes/logo.png" alt="First slide">
-                <div>
-                  <h3>SUCURSAL BELGRANO</h3>
-                  <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-                </div>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eaque temporibus laboriosam laudantium
-                facilis</p>
-              <p> nemo, officia cupiditate sit tempora veniam ipsum tempore ipsa dolores quibusdam facere a ad. Aliquid,
-                aspernatur.</p>
-              <ul class="iconsMobile">
-                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-location-dot"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-phone-volume"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class=" carouselSucursal">
-              <div class="d-flex">
-                <img class="d-block" src="./Assets/imagenes/logo.png" alt="First slide">
-                <div>
-                  <h3>SUCURSAL TISCORNIA</h3>
-                  <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-                </div>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eaque temporibus laboriosam laudantium
-                facilis</p>
-              <p> nemo, officia cupiditate sit tempora veniam ipsum tempore ipsa dolores quibusdam facere a ad. Aliquid,
-                aspernatur.</p>
-              <ul class="iconsMobile">
-                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-location-dot"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-phone-volume"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carouselSucursal">
-              <div class="d-flex">
-                <img class="d-block" src="./Assets/imagenes/logo.png" alt="First slide">
-                <div>
-                  <h3>SUCURSAL INTECNUS</h3>
-                  <h4>Lorem ipsum dolor sit amet, consectetur</h4>
-                </div>
-              </div>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eaque temporibus laboriosam laudantium
-                facilis</p>
-              <p> nemo, officia cupiditate sit tempora veniam ipsum tempore ipsa dolores quibusdam facere a ad. Aliquid,
-                aspernatur.</p>
-              <ul class="iconsMobile">
-                <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-location-dot"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-phone-volume"></i></a></li>
-              </ul>
-
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-    </section> -->
     <!--------------------------------------- CONTACTO ------------------------------------->
     <section class="contactContainer">
       <div>
         <h2>MEJORAMOS LA FORMA DE <span>CONTACTO</span></h2>
-        <p>Creamos el siguiente formulario de contacto para cubrir todas tus dudas y consultas. te invitamos a
+        <p class="parrafoIntroContacto">Creamos el siguiente formulario de contacto para cubrir todas tus dudas y consultas. Te invitamos a
           escribirnos completando los siguientes pasos</p>
       </div>
       <div class="row contactMain">
@@ -581,7 +481,7 @@
                 <span class="checkmark"></span>
               </label>
             </div>
-            <button class="btnContacto" type="button" id="contactButton">Siguiente</button>
+            <button class=" btnSiguiente btnContacto" type="button" id="contactButton">Siguiente</button>
         </div>
         <div class="contactForm col-md-6 col-sm-12" id="contactForm">
           <div class="d-flex">
@@ -627,12 +527,6 @@
     <div class="footerContainer">
       <div>
         <img src="Assets/imagenes/logo2.png" alt="">
-      </div>
-      <div class="iconsContainer">
-        <a href="" target="_blank"><i class="fa-brands fa-facebook-f icono"></i></a>
-        <a href="" target="_blank"><i class="fa-brands fa-instagram icono"></i></a>
-        <a href="" target="_blank"><i class="fa-solid fa-envelope icono"></i></a>
-
       </div>
       <div>
         <ul class="navFooter">
