@@ -66,6 +66,7 @@ body {
 
   @include responsive(mobile) {
     max-width: $mobile;
+    overflow-x: hidden;
   }
 }
 
