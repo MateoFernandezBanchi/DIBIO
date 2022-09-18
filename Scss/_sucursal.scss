@@ -7,9 +7,9 @@
   width: 100%;
   margin: 0 auto;
 
-  @include responsive(mobile) {
-    display: none;
-  }
+  // @include responsive(mobile) {
+  //   display: none;
+  // }
 }
 
 .sucursalMainContainer {
@@ -55,6 +55,12 @@
   height:100%;
   text-align: center;
   font: $subtitulo;
+  @include responsive(mobile){
+    padding: 0;
+    h3 {
+      margin-left: 0;
+    }
+  }
 }
 
 .sucursalBoton {
@@ -68,6 +74,9 @@
   border-radius: 10px 10px 0 0 ;
   &:hover {
     background-color: $violetTertiary;
+  }
+  @include responsive(mobile) {
+    max-height: 100px;
   }
 }
 
@@ -83,6 +92,13 @@
     font-size: 20px;
     text-align: left;
     margin-left:6.6rem;
+  }
+  @include responsive(mobile) {
+    max-height: 130px;
+    h3 {
+      margin-left: 0;
+      text-align: center;
+    }
   }
 }
 #sucursal1 {
@@ -112,6 +128,13 @@ a {
     margin:0;
     margin-left:20px;
     font-size: 25px;
+  }
+  @include responsive(mobile) {
+    flex-direction: column-reverse;
+    width: 100vw;
+    img {
+      width: 50px;
+    }
   }
 }
 .contactoSucursal {
@@ -199,5 +222,10 @@ a {
   p {
     font: $texto;
     font-size: 16px;
+  }
+}
+.imgCentral, .sucursalInformacion {
+  @include responsive(mobile) {
+    width: 100vw;
   }
 }

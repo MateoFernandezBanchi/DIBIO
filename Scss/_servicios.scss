@@ -43,6 +43,9 @@
         // background-image: url("../Assets/imagenes2/scientist2.jpg");
         transition: all 1s;
         display: flex;
+        h3, img {
+            transition: all 1s;
+        }
     }
 
     .back0 {
@@ -72,6 +75,7 @@
             font: $texto;
             color: white;
             font-size: 20px;
+            height: 100px;
         }
     }
 
@@ -79,12 +83,13 @@
         flex: 80%;
 
         img {
-            width: 100px;
+            transform: scale(.95);
+            transform: translateY(80px);
             margin-left: 5%;
         }
 
         h3 {
-            transform: rotate(270deg);
+            transform: rotate(-90deg);
 
             width: 80%;
             // margin-left: 50%;
@@ -101,6 +106,18 @@
             align-items: center;
             height: 100%;
         }
+        p {
+            animation-name: paragraph;
+            animation-duration: 1.5s;
+        }
+    }
+    @keyframes paragraph {
+       
+            0%   {opacity: 0%}
+            25% {opacity: 25%}
+            50% {opacity: 50%}
+            100%  {opacity: none}
+          
     }
 
     .serviciosCards {
