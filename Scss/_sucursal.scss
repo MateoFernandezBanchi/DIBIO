@@ -98,7 +98,8 @@
     text-align: left;
     margin-left:6.6rem;
     @include responsive(mobile) {
-     font-size: 16px;
+     font-size: 14px;
+     padding: 2px;
     }
   }
   @include responsive(mobile) {
