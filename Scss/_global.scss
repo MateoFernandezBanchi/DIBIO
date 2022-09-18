@@ -8,6 +8,7 @@
   font-style: bold;
   font-weight: bold;
 }
+
 // SUBTITULO
 
 @font-face {
@@ -52,41 +53,49 @@
   font-style: normal;
   font-weight: normal;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
-  font:$texto;
+  font: $texto;
   overflow-x: hidden;
+
   @include responsive(mobile) {
-    max-width:$mobile;
+    max-width: $mobile;
   }
 }
+
 ul li a {
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: #ffffff;
   font-family: "Hevetica";
+
   &:hover {
     text-decoration: underline;
   }
 }
+
 a:hover {
   color: white;
   text-decoration: underline;
 }
+
 li {
   list-style-type: none;
-  padding: 20px;
+  padding: 10px;
+  margin: 0;
 }
 
 ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 70px;
 }
 
 header {
@@ -95,30 +104,61 @@ header {
   z-index: 20;
   width: 100vw;
 }
+
 .navDesktop {
   width: 100vw;
+
   .waveNav {
-    width:100vw;
-    position:relative;
-    bottom:80px;
+    width: 110vw;
+    position: relative;
+    bottom: 90px;
+
   }
+
   @include responsive(mobile) {
     display: none;
   }
+
   ul {
+    width: 100%;
     position: relative;
-    z-index:10;
+    z-index: 10;
     background-color: $violetPrimary;
   }
+
   ul a {
-  font:$texto;}
+    font: $texto;
+    font-size: 18px;
+  }
+
+  img {
+    width: 150px;
+    position: relative;
+    right: 100px;
+  }
+
+  button {
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    padding: 15px;
+    font-size: 16px;
+    position: relative;
+    left: 60px;
+  }
+  li {
+    margin-top: 15px;
+  }
 }
+
 .navbarMobile {
   @include responsive(tablet) {
     display: none;
   }
+
   background-color: $violetPrimary;
 }
+
 .logoNavMobile {
   width: 30%;
 }
