@@ -186,7 +186,7 @@ select::-ms-expand {
     width: 90%;
     height: 93%;
     top: 20px;
-    transform: translateX(450px);
+    transform: translateX(480px);
     transition: 1s;
   }
 }
@@ -286,6 +286,10 @@ select::-ms-expand {
 }
 textarea {
   resize: none;
+  @include responsive(mobile) {
+    height: 80px;
+    width: 100%;
+  }
 }
 #dni {
   position: relative;

@@ -46,6 +46,11 @@
   h3 {
     display:none;
   }
+  @include responsive(mobile) {
+    h4 {
+      font-size: 16px;
+    }
+  }
 }
 
 .sucursalContent {
@@ -92,6 +97,9 @@
     font-size: 20px;
     text-align: left;
     margin-left:6.6rem;
+    @include responsive(mobile) {
+     font-size: 16px;
+    }
   }
   @include responsive(mobile) {
     max-height: 130px;
