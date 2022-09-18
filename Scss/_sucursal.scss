@@ -229,3 +229,9 @@ a {
     width: 100vw;
   }
 }
+.ubicacionSucursal {
+  @include responsive(mobile) {
+    margin-top: 150px;
+    width: 80vw;
+  }
+}
