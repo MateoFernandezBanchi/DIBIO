@@ -57,17 +57,18 @@
   }
   .navbar-nav {
     height: 60vh;
+    margin-top: 50px;
     li {
         a {
             font:$subtitulo;
-            font-size: 22px;
+            font-size: 18px;
         }
         width: 80%;
         text-align: right;
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 22px;
         color: white;
         text-align: right;
         width: 80%;
