@@ -4,42 +4,57 @@
 .innovacionContainer {
   display: flex;
   justify-content: center;
-  width: 90%;
-  font:$texto;
-  margin: auto;}
-  .innovacionText {
-
-    @include responsive(mobile){
-      width: 100%;      
+  width: 95%;
+  height: 80vh;
+  font: $texto;
+  margin: auto;
+}
+.innovacionText {
+  width: 70%;
+  margin: 40px 0;
+  @include responsive(mobile) {
+    width: 100%;
+  }
+  h2 {
+    font: $titulo;
+    font-size: 50px;
+    font-weight: 700;
+    color: $violetPrimary;
+    line-height: 70px;
+    @include responsive(mobile) {
+      font-size: 30px;
+      line-height: 50px;
+      margin-top: 200px;
     }
-    h2 {
-      font: $titulo;
-      font-size: 55px;
-      font-weight: 700;
-      color: $violetPrimary;
-      line-height: 95px;
-      @include responsive(mobile) {
-         font-size:30px;
-          line-height:50px;
-          margin-top: 200px;
-      }
-      span {
-        color: $violetSecondary;
-      }
+    span {
+      color: $violetSecondary;
+    }
+    p {
     }
   }
-  .innovacionImage {
-    img {
-      width: 80%;
-      padding-left: 30px;
-      @include responsive(mobile) {
-        display: none;
-        // position:absolute;
-        // top:900px;
-      }
-    }
-    
+}
+.innovacionImage {
+  width: 40%;
+  img {
+    width: 70%;
+    padding-left: 30px;
   }
+  .logoUno {
+    z-index: 2;
+    position: relative;
+    top: 60px;
+  }
+  .logoDos {
+    z-index: 3;
+    position: relative;
+    top: -250px;
+  }
+  .logoTres {
+    z-index: 1;
+    position: relative;
+    top: -580px;
+  }
+}
 
 // MOBILE
 .innovacionFlexMobile {
@@ -48,18 +63,18 @@
   width: 90%;
   margin: auto;
   .imgInnovacion {
-    width:20%;
+    width: 20%;
     opacity: 0.5;
-    @include responsive(tablet){
+    @include responsive(tablet) {
       display: none;
     }
   }
 }
 .imgCelular {
   @include responsive(mobile) {
-    width:40vw;
-}
-  @include responsive(tablet){
-   display: none;
+    width: 40vw;
+  }
+  @include responsive(tablet) {
+    display: none;
   }
 }
