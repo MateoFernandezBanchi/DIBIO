@@ -5,76 +5,110 @@
   display: flex;
   justify-content: center;
   width: 95%;
-  height: 80vh;
+  height: 100vh;
   font: $texto;
-  margin: auto;
+  margin: 30px auto 50px auto;
+  @include responsive(mobile) {
+    margin: 150px 0px 50px 0px;
+  }
 }
 .innovacionText {
   width: 70%;
   margin: 40px 0;
   @include responsive(mobile) {
     width: 100%;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 2fr 1fr;
+    grid-template-areas:
+      "titulo titulo"
+      "textoUno imagen"
+      "textoDos textoDos";
   }
   h2 {
+    width: 75%;
     font: $titulo;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
     color: $violetPrimary;
     line-height: 70px;
     @include responsive(mobile) {
-      font-size: 30px;
+      grid-area: titulo;
+      width: 80%;
+      height: min-content;
+      font-size: 35px;
       line-height: 50px;
-      margin-top: 200px;
     }
     span {
       color: $violetSecondary;
     }
-    p {
+  }
+  .textoInnovacion {
+    font-size: 17px !important;
+
+    .enfasisInnovacion {
+      color: $violetSecondary;
+    }
+  }
+  .textMobileOne {
+    @include responsive(mobile) {
+      grid-area: textoUno;
+      width: auto;
+      margin: 30px 0px 20px 20px;
+    }
+  }
+  .textMobileTwo {
+    @include responsive(mobile) {
+      width: auto;
+      grid-area: textoDos;
+      margin: 0px 20px 20px 20px;
+    }
+  }
+}
+.innovacionImageMobile {
+  display: none;
+  align-self: center;
+
+  @include responsive(mobile) {
+    display: inline;
+    grid-area: imagen;
+    width: 100%;
+    img {
+      width: 100%;
+      padding-left: 30px;
+    }
+
+    .logoMobile {
+      z-index: 3;
+      position: relative;
+      top: -8%;
     }
   }
 }
 .innovacionImage {
+  grid-area: imagen;
   width: 40%;
   img {
-    width: 70%;
+    width: 65%;
     padding-left: 30px;
   }
   .logoUno {
     z-index: 2;
     position: relative;
-    top: 60px;
+    top: 45px;
   }
   .logoDos {
     z-index: 3;
     position: relative;
-    top: -250px;
+    top: -125px;
   }
   .logoTres {
     z-index: 1;
     position: relative;
-    top: -580px;
+    top: -310px;
   }
-}
-
-// MOBILE
-.innovacionFlexMobile {
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  margin: auto;
-  .imgInnovacion {
-    width: 20%;
-    opacity: 0.5;
-    @include responsive(tablet) {
-      display: none;
-    }
-  }
-}
-.imgCelular {
   @include responsive(mobile) {
-    width: 40vw;
-  }
-  @include responsive(tablet) {
     display: none;
   }
 }
