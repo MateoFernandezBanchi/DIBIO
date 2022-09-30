@@ -137,12 +137,12 @@ li {
   .carouselHeader {
     width: auto;
     height: 80vh;
-    overflow: hidden;
+    overflow: hidden !important;
     /* position: static !important; */
   }
   .carouselBackground {
     position: absolute;
-    width: auto;
+    width: 100vw;
     height: fit-content;
     z-index: 1;
   }
