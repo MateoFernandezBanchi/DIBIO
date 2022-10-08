@@ -12,6 +12,36 @@
   //  }
 }
 
+.sucursalText {
+  text-align: center;
+
+  p {
+    width: 50vw;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 40px;
+
+    @include responsive(tablet) {
+      font-size: 18px;
+      width: 80vw;
+      padding: 10px;
+    }
+  }
+
+  h2 {
+    width: 80vw;
+    font: $titulo;
+    font-size: 45px;
+    font-weight: 700;
+    color: $violetPrimary;
+    line-height: 70px;
+
+    span {
+      color: $violetSecondary;
+    }
+  }
+}
+
 .sucursalMainContainer {
   display: flex;
   flex-direction: column;
@@ -313,6 +343,7 @@ a {
 
   @include responsive(tablet) {
     bottom: 30vh;
+    font-size: 30px;
   }
 }
 

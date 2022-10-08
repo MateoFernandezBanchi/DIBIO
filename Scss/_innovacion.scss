@@ -9,6 +9,7 @@
   font: $texto;
   margin: 30px auto 50px auto;
 }
+
 .innovacionText {
   width: 70%;
   margin: 40px 0;
@@ -20,39 +21,47 @@
     font-weight: 700;
     color: $violetPrimary;
     line-height: 70px;
+
     span {
       color: $violetSecondary;
     }
   }
+
   .textoInnovacion {
-    font-size: 17px !important;
+    // font-size: 17px !important;
 
     .enfasisInnovacion {
       color: $violetSecondary;
     }
   }
 }
+
 .innovacionImageMobile {
   display: none;
   align-self: center;
 }
+
 .innovacionImage {
   grid-area: imagen;
   width: 40%;
+
   img {
     width: 65%;
     padding-left: 30px;
   }
+
   .logoUno {
     z-index: 2;
     position: relative;
     top: 45px;
   }
+
   .logoDos {
     z-index: 3;
     position: relative;
     top: -125px;
   }
+
   .logoTres {
     z-index: 1;
     position: relative;
@@ -64,11 +73,12 @@
   .innovacionContainer {
     display: flex;
     justify-content: center;
-    width: 95%;
+    width: 90%;
     font: $texto;
-    margin: 50px 0px 50px 0px;
+    margin: 50px auto 50px auto;
     height: auto;
   }
+
   .innovacionText {
     margin: 40px 0;
     width: 100%;
@@ -90,74 +100,88 @@
       height: min-content;
       font-size: 9vw;
       line-height: 100px;
+
       span {
         color: $violetSecondary;
       }
     }
+
     .textoInnovacion {
-      font-size: 17px !important;
+      font-size: 22px;
 
       .enfasisInnovacion {
         color: $violetSecondary;
       }
     }
+
     .textMobileOne {
       width: 78% !important;
       grid-area: textoUno;
       width: auto;
       margin: 50px 0px 10px 20px;
-      font-size: 3vw !important;
+      font-size: 22px;
     }
+
     .textMobileTwo {
       width: auto;
       grid-area: textoDos;
       margin: 0px 20px 20px 20px;
-      font-size: 3vw !important;
+      font-size: 22px;
     }
+
     .textMobileThree {
       width: auto;
       grid-area: textoTres;
       margin: 0px 20px 20px 20px;
-      font-size: 3vw !important;
+      font-size: 22px;
     }
   }
+
   .innovacionImageMobile {
     align-self: center;
     display: inline;
     grid-area: imagen;
     width: 100%;
+
     img {
       width: 100%;
       padding-left: 30px;
     }
+
     .logoMobile {
       z-index: 3;
       position: relative;
       top: -5%;
     }
   }
+
   .innovacionImage {
     grid-area: imagen;
     width: 40%;
+
     img {
       width: 65%;
       padding-left: 30px;
     }
+
     .logoUno {
       z-index: 2;
       position: relative;
       top: 45px;
     }
+
     .logoDos {
       z-index: 3;
       position: relative;
       top: -125px;
     }
+
     .logoTres {
       z-index: 1;
       position: relative;
       top: -310px;
     }
+
     display: none;
     width: 10% !important;
   }
@@ -167,11 +191,12 @@
   .innovacionContainer {
     display: flex;
     justify-content: center;
-    width: 95%;
+    width: 85%;
     font: $texto;
-    margin: 150px 0px 50px 0px;
+    margin: 150px auto 50px auto;
     height: auto;
   }
+
   .innovacionText {
     margin: 40px 0;
     width: 100%;
@@ -194,41 +219,48 @@
       height: min-content;
       font-size: 9vw;
       line-height: 50px;
+
       span {
         color: $violetSecondary;
       }
     }
+
     .textoInnovacion {
-      font-size: 17px !important;
+      // font-size: 17px !important;
 
       .enfasisInnovacion {
         color: $violetSecondary;
       }
     }
+
     .textMobileOne {
       grid-area: textoUno;
       width: auto;
       margin: 30px 0px 20px 20px;
-      font-size: 4vw !important;
+      font-size: 18px;
     }
+
     .textMobileTwo {
       width: auto;
       grid-area: textoDos;
       margin: 0px 20px 20px 20px;
-      font-size: 4vw !important;
+      font-size: 18px;
     }
+
     .textMobileThree {
       width: auto;
       grid-area: textoTres;
       margin: 0px 20px 20px 20px;
-      font-size: 4vw !important;
+      font-size: 18px;
     }
   }
+
   .innovacionImageMobile {
     align-self: center;
     display: inline;
     grid-area: imagen;
     width: 100%;
+
     img {
       width: 100%;
       padding-left: 30px;
@@ -240,28 +272,36 @@
       }
     }
   }
+
   .innovacionImage {
     grid-area: imagen;
     width: 40%;
+
     img {
       width: 65%;
       padding-left: 30px;
     }
+
     .logoUno {
       z-index: 2;
       position: relative;
       top: 45px;
     }
+
     .logoDos {
       z-index: 3;
       position: relative;
       top: -125px;
     }
+
     .logoTres {
       z-index: 1;
       position: relative;
       top: -310px;
     }
+
     display: none;
   }
-} ;
+}
+
+;
