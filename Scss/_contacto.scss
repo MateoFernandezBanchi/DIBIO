@@ -281,6 +281,11 @@ select::-ms-expand {
   h3 {
     margin-left: 0;
   }
+
+  p {
+    padding: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .datosContactotablet {
@@ -312,6 +317,8 @@ select::-ms-expand {
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
+  margin-left: 10px;
+  margin-top: 20px;
   cursor: pointer;
   font-size: 18px;
   -webkit-user-select: none;
