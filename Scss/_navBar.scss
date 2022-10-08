@@ -1,4 +1,8 @@
 .navDesktop {
+  @include responsive(tablet) {
+    display: none;
+  }
+
   width: 100vw;
   height: 70px;
   background-color: $violetPrimary;
@@ -11,6 +15,7 @@
     z-index: -1;
     overflow: hidden;
   }
+
   .contenedorMenu {
     margin: 0 auto;
     display: flex;
@@ -22,25 +27,30 @@
 
     .contenedorLogo {
       padding-right: 40px;
+
       .logoMenu {
         width: 150px;
         z-index: 300 !important;
       }
     }
+
     .menu {
       display: flex;
       gap: 10px;
       margin: 0;
       padding: 0;
+
       li a {
         font: $texto;
         font-size: 16px;
       }
     }
+
     .menuBotones {
       margin-left: 20px;
       display: flex;
       gap: 20px;
+
       a button {
         border: none;
         background: #ffffff;
@@ -52,6 +62,7 @@
         font-size: 16px;
         color: #662483;
       }
+
       a button:active {
         box-shadow: none;
         border-radius: 6px;
@@ -60,6 +71,7 @@
         font-size: 16px;
         color: $violetPrimary;
       }
+
       a button:hover {
         box-shadow: none;
         color: $violetPrimary;
@@ -127,7 +139,7 @@
 // }
 
 .navbarMobile {
-  @include responsive(tablet) {
+  @include responsive(pc) {
     display: none;
   }
 
@@ -137,14 +149,17 @@
 .logoNavMobile {
   width: 30%;
 }
+
 .navbar-nav {
   height: 60vh;
   margin-top: 50px;
+
   li {
     a {
       font: $subtitulo;
       font-size: 18px;
     }
+
     width: 80%;
     text-align: right;
   }
