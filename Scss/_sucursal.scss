@@ -136,6 +136,10 @@
     text-align: left;
     margin-left: 6.6rem;
 
+    @include responsive(tablet) {
+      margin: 5px auto;
+    }
+
     @include responsive(mobile) {
       font-size: 14px;
       padding: 2px;
@@ -146,7 +150,7 @@
     max-height: 130px;
 
     h3 {
-      margin-left: 0;
+      margin: 10px auto;
       text-align: center;
     }
   }
@@ -192,12 +196,16 @@ a {
     flex-direction: column-reverse;
     width: 100vw;
     position: relative;
-    bottom: 30vh;
+    bottom: 10vh;
     align-items: center;
 
     img {
       width: 50px;
     }
+  }
+
+  @include responsive(mobile) {
+    bottom: 40vh;
   }
 }
 
@@ -329,7 +337,20 @@ a {
 
   @include responsive(tablet) {
     margin-top: 5vh;
+    width: 80vw;
+
+    p {
+
+      font-size: 20px;
+    }
   }
+
+  @include responsive(mobile) {
+    p {
+      font-size: 18px;
+    }
+  }
+
 }
 
 .sucursalTitle {
@@ -342,8 +363,9 @@ a {
   margin-left: 80px;
 
   @include responsive(tablet) {
-    bottom: 30vh;
+    bottom: 38vh;
     font-size: 30px;
+    margin-left: 40px;
   }
 }
 

@@ -5,6 +5,10 @@
     font-size: 22px;
     text-align: center;
     padding: 20px;
+
+    @include responsive(mobile) {
+      width: 90%;
+    }
   }
 
   h2 {
