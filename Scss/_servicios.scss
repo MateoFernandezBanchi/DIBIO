@@ -1,5 +1,5 @@
 .servicios {
-    @include responsive(mobile) {
+    @include responsive(tablet) {
         display: none;
     }
 
@@ -43,29 +43,36 @@
         // background-image: url("../Assets/imagenes2/scientist2.jpg");
         transition: all 1s;
         display: flex;
-        h3, img {
+
+        h3,
+        img {
             transition: all 1s;
         }
     }
 
     .back0 {
-        background-image: url("../Assets/imagenes2/background1.jpg");
+        background-image: url("../Assets/imagenes/AnalisisHumanos.jpg");
+        background-size: cover;
     }
 
     .back1 {
-        background-image: url("../Assets/imagenes2/background2.jpg");
+        background-image: url("../Assets/imagenes/AtencionNiños.jpg");
+        background-size: cover;
     }
 
     .back2 {
-        background-image: url("../Assets/imagenes2/background3.jpg");
+        background-image: url("../Assets/imagenes/AtencionDomicilio.jpg");
+        background-size: cover;
     }
 
     .back3 {
-        background-image: url("../Assets/imagenes2/background4.jpg");
+        background-image: url("../Assets/imagenes/AnalisisVeterinarios.jpg");
+        background-size: cover;
     }
 
     .back4 {
-        background-image: url("../Assets/imagenes2/background5.jpg");
+        background-image: url("../Assets/imagenes/AnalisisAgua.jpg");
+        background-size: cover;
     }
 
     .serviciosParrafo {
@@ -106,18 +113,31 @@
             align-items: center;
             height: 100%;
         }
+
         p {
             animation-name: paragraph;
             animation-duration: 1.5s;
         }
     }
+
     @keyframes paragraph {
-       
-            0%   {opacity: 0%}
-            25% {opacity: 25%}
-            50% {opacity: 50%}
-            100%  {opacity: none}
-          
+
+        0% {
+            opacity: 0%
+        }
+
+        25% {
+            opacity: 25%
+        }
+
+        50% {
+            opacity: 50%
+        }
+
+        100% {
+            opacity: none
+        }
+
     }
 
     .serviciosCards {
@@ -148,6 +168,36 @@
 
 // MOBILE
 .serviciosMobile {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .accordion {
+        width: 100vw;
+        margin-left: 15vw;
+    }
+
+    @include responsive(tablet) {
+        .accordion-item {
+            width: 100%;
+        }
+
+    }
+
+    @include responsive(mobile) {
+        .accordion-item {
+            width: 90%;
+            margin-left: 0;
+        }
+
+        .accordion {
+            width: 100vw;
+            margin-left: 5vw;
+        }
+
+    }
+
     @include responsive(pc) {
         display: none;
     }
@@ -214,5 +264,6 @@
             width: 50px;
         }
     }
+
 
 }

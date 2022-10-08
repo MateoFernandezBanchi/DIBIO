@@ -4,62 +4,264 @@
 .innovacionContainer {
   display: flex;
   justify-content: center;
-  width: 90%;
-  font:$texto;
-  margin: auto;}
-  .innovacionText {
+  width: 95%;
+  height: 100vh;
+  font: $texto;
+  margin: 30px auto 50px auto;
+}
+.innovacionText {
+  width: 70%;
+  margin: 40px 0;
 
-    @include responsive(mobile){
-      width: 100%;      
+  h2 {
+    width: 75%;
+    font: $titulo;
+    font-size: 45px;
+    font-weight: 700;
+    color: $violetPrimary;
+    line-height: 70px;
+    span {
+      color: $violetSecondary;
     }
+  }
+  .textoInnovacion {
+    font-size: 17px !important;
+
+    .enfasisInnovacion {
+      color: $violetSecondary;
+    }
+  }
+}
+.innovacionImageMobile {
+  display: none;
+  align-self: center;
+}
+.innovacionImage {
+  grid-area: imagen;
+  width: 40%;
+  img {
+    width: 65%;
+    padding-left: 30px;
+  }
+  .logoUno {
+    z-index: 2;
+    position: relative;
+    top: 45px;
+  }
+  .logoDos {
+    z-index: 3;
+    position: relative;
+    top: -125px;
+  }
+  .logoTres {
+    z-index: 1;
+    position: relative;
+    top: -310px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .innovacionContainer {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    font: $texto;
+    margin: 50px 0px 50px 0px;
+    height: auto;
+  }
+  .innovacionText {
+    margin: 40px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 0.8fr;
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas:
+      "titulo titulo"
+      "textoUno imagen"
+      "textoDos textoDos"
+      "textoTres textoTres";
+
     h2 {
       font: $titulo;
-      font-size: 55px;
       font-weight: 700;
       color: $violetPrimary;
-      line-height: 95px;
-      @include responsive(mobile) {
-         font-size:30px;
-          line-height:50px;
-          margin-top: 200px;
-      }
+      grid-area: titulo;
+      width: 90%;
+      height: min-content;
+      font-size: 9vw;
+      line-height: 100px;
       span {
         color: $violetSecondary;
       }
     }
-  }
-  .innovacionImage {
-    img {
-      width: 80%;
-      padding-left: 30px;
-      @include responsive(mobile) {
-        display: none;
-        // position:absolute;
-        // top:900px;
+    .textoInnovacion {
+      font-size: 17px !important;
+
+      .enfasisInnovacion {
+        color: $violetSecondary;
       }
     }
-    
-  }
-
-// MOBILE
-.innovacionFlexMobile {
-  display: flex;
-  justify-content: center;
-  width: 90%;
-  margin: auto;
-  .imgInnovacion {
-    width:20%;
-    opacity: 0.5;
-    @include responsive(tablet){
-      display: none;
+    .textMobileOne {
+      width: 78% !important;
+      grid-area: textoUno;
+      width: auto;
+      margin: 50px 0px 10px 20px;
+      font-size: 3vw !important;
+    }
+    .textMobileTwo {
+      width: auto;
+      grid-area: textoDos;
+      margin: 0px 20px 20px 20px;
+      font-size: 3vw !important;
+    }
+    .textMobileThree {
+      width: auto;
+      grid-area: textoTres;
+      margin: 0px 20px 20px 20px;
+      font-size: 3vw !important;
     }
   }
-}
-.imgCelular {
-  @include responsive(mobile) {
-    width:40vw;
-}
-  @include responsive(tablet){
-   display: none;
+  .innovacionImageMobile {
+    align-self: center;
+    display: inline;
+    grid-area: imagen;
+    width: 100%;
+    img {
+      width: 100%;
+      padding-left: 30px;
+    }
+    .logoMobile {
+      z-index: 3;
+      position: relative;
+      top: -5%;
+    }
+  }
+  .innovacionImage {
+    grid-area: imagen;
+    width: 40%;
+    img {
+      width: 65%;
+      padding-left: 30px;
+    }
+    .logoUno {
+      z-index: 2;
+      position: relative;
+      top: 45px;
+    }
+    .logoDos {
+      z-index: 3;
+      position: relative;
+      top: -125px;
+    }
+    .logoTres {
+      z-index: 1;
+      position: relative;
+      top: -310px;
+    }
+    display: none;
+    width: 10% !important;
   }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .innovacionContainer {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    font: $texto;
+    margin: 150px 0px 50px 0px;
+    height: auto;
+  }
+  .innovacionText {
+    margin: 40px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas:
+      "titulo titulo"
+      "textoUno imagen"
+      "textoDos textoDos"
+      "textoTres textoTres";
+
+    h2 {
+      font: $titulo;
+      font-weight: 700;
+      color: $violetPrimary;
+
+      grid-area: titulo;
+      width: 90%;
+      height: min-content;
+      font-size: 9vw;
+      line-height: 50px;
+      span {
+        color: $violetSecondary;
+      }
+    }
+    .textoInnovacion {
+      font-size: 17px !important;
+
+      .enfasisInnovacion {
+        color: $violetSecondary;
+      }
+    }
+    .textMobileOne {
+      grid-area: textoUno;
+      width: auto;
+      margin: 30px 0px 20px 20px;
+      font-size: 4vw !important;
+    }
+    .textMobileTwo {
+      width: auto;
+      grid-area: textoDos;
+      margin: 0px 20px 20px 20px;
+      font-size: 4vw !important;
+    }
+    .textMobileThree {
+      width: auto;
+      grid-area: textoTres;
+      margin: 0px 20px 20px 20px;
+      font-size: 4vw !important;
+    }
+  }
+  .innovacionImageMobile {
+    align-self: center;
+    display: inline;
+    grid-area: imagen;
+    width: 100%;
+    img {
+      width: 100%;
+      padding-left: 30px;
+
+      .logoMobile {
+        z-index: 3;
+        position: relative;
+        top: -5%;
+      }
+    }
+  }
+  .innovacionImage {
+    grid-area: imagen;
+    width: 40%;
+    img {
+      width: 65%;
+      padding-left: 30px;
+    }
+    .logoUno {
+      z-index: 2;
+      position: relative;
+      top: 45px;
+    }
+    .logoDos {
+      z-index: 3;
+      position: relative;
+      top: -125px;
+    }
+    .logoTres {
+      z-index: 1;
+      position: relative;
+      top: -310px;
+    }
+    display: none;
+  }
+} ;

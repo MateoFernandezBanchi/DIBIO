@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="./carousel/slick-1.8.1/slick/slick.css">
   <link rel="stylesheet" href="./carousel/slick-1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" href="./css/style.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>DIBIO</title>
 </head>
 <!-- Testing GIthub -->
@@ -22,17 +23,23 @@
   <header>
     <!-- NAVBAR DESKTOP -->
     <nav class="navDesktop">
-      <ul>
-        <li><img src="./Assets/imagenes/logo2.png" alt=""></li>
-        <li><a href="">INICIO</a></li>
-        <li><a href="#innovacion">NUESTRA MISION</a></li>
-        <li><a href="#servicios">SERVICIOS</a></li>
-        <li><a href="#sucursales">SUCURSALES</a></li>
-        <li><a href="#contacto">CONTACTO</a></li>
-        <li><button>RESULTADOS</button></li>
-        <li><button>SOLICITAR TURNOS</button></li>
-      </ul>
-      <img class="waveNav" src="./Assets/imagenes/waveNav.png" alt="">
+      <div class="contenedorMenu">
+        <div class="contenedorLogo">
+          <a href=""><img class="logoMenu" src="./Assets/imagenes/logo2.png" alt=""></a>
+        </div>
+        <ul class="menu">
+          <li><a href="">INICIO</a></li>
+          <li><a href="#innovacion">NUESTRA MISION</a></li>
+          <li><a href="#servicios">SERVICIOS</a></li>
+          <li><a href="#sucursales">SUCURSALES</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        <div class="menuBotones">
+          <a href=""><button>RESULTADOS</button></a>
+          <a href=""><button>SOLICITAR TURNOS</button></a>
+        </div>
+      </div>
+      <img class="waveNav" src="./Assets/imagenes/waveNav-3.png" alt="">
     </nav>
     <!-- NAVBAR MOBILE -->
     <nav class="navbar navbar-expand-lg navbar-dark navbarMobile">
@@ -85,11 +92,11 @@
       </div>
 
       <div class="carouselImagenes">
-        <div><img src="./Assets/imagesCarousel/1.png" alt="" class="imagenCarousel"></div>
-        <div><img src="./Assets/imagesCarousel/2.png" alt="" class="imagenCarousel"></div>
-        <div><img src="./Assets/imagesCarousel/3.png" alt="" class="imagenCarousel"></div>
-        <div><img src="./Assets/imagesCarousel/4.png" alt="" class="imagenCarousel"></div>
-        <div><img src="./Assets/imagesCarousel/5.png" alt="" class="imagenCarousel"></div>
+        <div><img src="./Assets/imagesCarousel/familiaSlide.png" alt="" class="imagenCarousel"></div>
+        <div><img src="./Assets/imagesCarousel/microSlide.png" alt="" class="imagenCarousel"></div>
+        <div><img src="./Assets/imagesCarousel/extraccionSlide.png" alt="" class="imagenCarousel"></div>
+        <div><img src="./Assets/imagesCarousel/maquinaSlideOne.png" alt="" class="imagenCarousel"></div>
+        <div><img src="./Assets/imagesCarousel/maquinaSlideTwo.png" alt="" class="imagenCarousel"></div>
       </div>
 
       <div class="carouselInfo">
@@ -135,7 +142,7 @@
           </p>
         </div>
       </div>
-      <div class="carouselInfo2">
+      <!-- <div class="carouselInfo2">
         <div class="infoContainer2">
           <div class="contenedorInfoMobile">
             <h1>CONTAMOS PROFESIONALES <span>CAPACITADOS</span></h1>
@@ -186,25 +193,45 @@
             </p>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- SECCION INNOVACION -->
     <section class="innovacionContainer" id="innovacion">
       <div class="innovacionText">
         <h2>LA INNOVACION COMO <span>CAMINO</span> </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
-          magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
-        <div class="innovacionFlexMobile">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
-            magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
-          <img class="imgInnovacion" src="./Assets/imagenes/logo.png" alt="">
+        <p class="textoInnovacion textMobileOne">El Laboratorio nace en el año 2008 con el sueño y las aspiraciones de
+          crecer
+          constantemente ofreciendo el servicio de
+          análisis clínico humanos y veterinarios a la población de Bariloche y ciudades próximas, a través de una red
+          de
+          laboratorio de Análisis Clínicos de Alta Complejidad, a la vanguardia de los avances de la Bioquímica y
+          Medicina,
+        </p>
+        <p class="textoInnovacion textMobileTwo">desafiando constantemente los propios objetivos planteados, con un
+          equipo multidisciplinario de recursos
+          humanos que se
+          actualiza en innovadoras tecnologías y ofrece diariamente una mejora en la calidad tanto en la atención de los
+          pacientes, como así también a los médicos e instituciones solicitantes</p>
+        <p class="textoInnovacion textMobileThree">Desde nuestros inicios nos propusimos ofrecer un diagnóstico integral
+          bioquímico de
+          excelencia, siendo <span class="enfasisInnovacion">NUESTROS PACIENTES Y SU SALUD</span> la prioridad, con el
+          compromiso de acompañarlos con innovación tecnológica,
+          responsabilidad y ética
+          profesional.</p>
+        <div class="innovacionImageMobile">
+
+          <img class="logoMobile" src="./Assets/imagenes/logo.png" alt="" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back" data-aos-easing="linear" data-aos-duration="2000">
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
-          magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
       </div>
       <div class="innovacionImage">
-        <img src="./Assets/imagenes/logo.png" alt="">
+        <img class="logoUno" src="./Assets/imagenes/logoParteUno.png" alt="" data-aos="fade-up" data-aos-easing="linear"
+          data-aos-duration="3000">
+        <img class="logoDos" src="./Assets/imagenes/logoParteDos.png" alt="" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back" data-aos-easing="linear" data-aos-duration="2000">
+        <img class="logoTres" src="./Assets/imagenes/logoParteTres.png" alt="" data-aos="fade-down"
+          data-aos-easing="linear" data-aos-duration="3000">
       </div>
     </section>
     <!------------------------ NUESTROS SERVICIOS DESKTOP----------------------------------------->
@@ -215,7 +242,7 @@
         </p>
       </div>
       <div class="serviciosCardsContainer d-flex ">
-        <div class=" serviciosCardsBackground back3">
+        <div class=" serviciosCardsBackground back0">
           <div class="serviciosCards">
             <img src="./Assets/imagenes/adn.png" alt="">
             <h3>ANALISIS HUMANOS</h3>
@@ -233,7 +260,7 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quibusdam quaerat saepe, ipsum cupiditate dolorem itaque sit accusamus omnis qui, culpa, facilis cumque mollitia hic? Quo pariatur eligendi perferendis ullam?</p>
           </div>
         </div>
-        <div class=" serviciosCardsBackground back4">
+        <div class=" serviciosCardsBackground back2">
               <div class="serviciosCards">
                 <img src="./Assets/imagenes/hogar.png" alt="">
                 <h3>ATENCION A DOMICILIO</h3>
@@ -242,7 +269,7 @@
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quibusdam quaerat saepe, ipsum cupiditate dolorem itaque sit accusamus omnis qui, culpa, facilis cumque mollitia hic? Quo pariatur eligendi perferendis ullam?</p>
 </div>
 </div>
-        <div class=" serviciosCardsBackground back2">
+        <div class=" serviciosCardsBackground back3">
                 <div class="serviciosCards">
                   <img src="./Assets/imagenes/veterinary.png" alt="">
                   <h3>ANALISIS VETERINARIOS</h3>
@@ -251,7 +278,7 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit quibusdam quaerat saepe, ipsum cupiditate dolorem itaque sit accusamus omnis qui, culpa, facilis cumque mollitia hic? Quo pariatur eligendi perferendis ullam?</p>
           </div>
         </div>         
-        <div class=" serviciosCardsBackground back0">
+        <div class=" serviciosCardsBackground back4">
                   <div class="serviciosCards">
                     <img src="./Assets/imagenes/el-planeta-tierra.png" alt="">
                     <h3>ANALISIS DE AGUA</h3>
@@ -351,25 +378,51 @@
                     </div>
     </section>
     <!-------------------------------- SECCION INNOVACION ------------------------------------------->
-    <section class="innovacionContainer">
-      <div class="innovacionText">
-        <h2><span>RESULTADOS</span>EN TUS MANOS</h2>
-        <div class="innovacionFlexMobile">
+    <section class="resultadosContainer">
+      <div class="resultadosText">
+        <h2><span>RESULTADOS</span> EN TUS MANOS</h2>
+        <div class="resultadosFlexMobile">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
             magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
-          <img class="imgCelular" src="./Assets/imagenes2/iphone.png" alt="">
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate provident tempore, velit laborum nostrum
+          quos similique quas. Ullam aspernatur voluptates natus commodi atque obcaecati nisi necessitatibus,
+          voluptatibus minus quasi quidem exercitationem possimus earum at explicabo. Modi omnis, magni et at corrupti
+          aliquam soluta autem id nobis? Sit in architecto ducimus voluptatum exercitationem fugit. Illo reiciendis
+          itaque delectus, tempore eveniet quia?</p>
+        <div class="containerBotonesResultados">
+          <button class="btnContacto verResultados" type="submit">VER RESULTADOS</button>
+          <button class="btnContacto btnContacto2 buttonBot" type="submit">DIBIO BOT</button>
+        </div>
+      </div>
+      <div class="resultadosImage">
+        <img class="innOne" src="./Assets/imagenes/mock-resultados.png" alt="">
+        <img class="innTwo" src="./Assets/imagenes/mock-whatsapp.png" alt="">
+      </div>
+    </section>
+    <section class="resultadosContainerMobile">
+      <div class="resultadosTextMobile">
+        <h2><span>RESULTADOS</span> EN TUS MANOS</h2>
+        <div class="primerParrafoImagenes">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+            lectus
+            magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
+          <div class="resultadosImageMobile">
+            <img class="innOne" src="./Assets/imagenes/mock-resultados.png" alt="">
+            <img class="innTwo" src="./Assets/imagenes/mock-whatsapp.png" alt="">
+          </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate provident tempore, velit laborum nostrum
+          quos similique quas. Ullam aspernatur voluptates natus commodi atque obcaecati nisi necessitatibus,
+          voluptatibus minus quasi quidem exercitationem possimus earum at explicabo. Modi omnis, magni et at corrupti
+          aliquam soluta autem id nobis? Sit in architecto ducimus voluptatum exercitationem fugit. Illo reiciendis
+          itaque delectus, tempore eveniet quia?</p>
+        <div class="containerBotonesResultadosMobile">
+          <button class="btnContacto verResultados" type="submit">VER RESULTADOS</button>
+          <button class="btnContacto btnContacto2 buttonBot" type="submit">DIBIO BOT</button>
+        </div>
+      </div>
 
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
-          magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel</p>
-        <div class="d-flex mt-5">
-          <button class="btnContacto" type="submit">VER RESULTADOS</button>
-          <button class="btnContacto btnContacto2" type="submit">DIBIO BOT</button>
-        </div>
-      </div>
-      <div class="innovacionImage">
-        <img src="./Assets/imagenes2/iphone.png" alt="">
-      </div>
     </section>
     <!--------------------------- SUCURSALES -------------------------------------------------->
     <section class="sucursalContainer" id="sucursales">
@@ -438,7 +491,8 @@
     <section class="contactContainer">
       <div>
         <h2>MEJORAMOS LA FORMA DE <span>CONTACTO</span></h2>
-        <p class="parrafoIntroContacto">Creamos el siguiente formulario de contacto para cubrir todas tus dudas y consultas. Te invitamos a
+        <p class="parrafoIntroContacto">Creamos el siguiente formulario de contacto para cubrir todas tus dudas y
+          consultas. Te invitamos a
           escribirnos completando los siguientes pasos</p>
       </div>
       <div class="row contactMain">
@@ -539,7 +593,12 @@
         </ul>
       </div>
     </div>
+    <div class="whatsappSticky">
+      <img src="./Assets/imagenes/whatsapp.png" alt="">
+    </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>;
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
@@ -554,6 +613,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./carousel/index.js"></script>
+
 </body>
 
 </html>

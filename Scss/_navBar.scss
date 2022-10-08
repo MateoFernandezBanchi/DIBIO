@@ -1,77 +1,173 @@
 .navDesktop {
+  @include responsive(tablet) {
+    display: none;
+  }
+
+  width: 100vw;
+  height: 70px;
+  background-color: $violetPrimary;
+  z-index: 100;
+
+  .waveNav {
     width: 100vw;
-  
-    .waveNav {
-      width: 110vw;
-      position: relative;
-      bottom: 90px;
-  
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .contenedorMenu {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    width: 95%;
+    overflow: hidden;
+
+    .contenedorLogo {
+      padding-right: 40px;
+
+      .logoMenu {
+        width: 150px;
+        z-index: 300 !important;
+      }
     }
-  
-    @include responsive(mobile) {
-      display: none;
+
+    .menu {
+      display: flex;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+
+      li a {
+        font: $texto;
+        font-size: 16px;
+      }
     }
-  
-    ul {
-      width: 100%;
-      position: relative;
-      z-index: 10;
-      background-color: $violetPrimary;
+
+    .menuBotones {
+      margin-left: 20px;
+      display: flex;
+      gap: 20px;
+
+      a button {
+        border: none;
+        background: #ffffff;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+          -10px -10px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        height: 40px;
+        padding: 10px;
+        font-size: 16px;
+        color: #662483;
+      }
+
+      a button:active {
+        box-shadow: none;
+        border-radius: 6px;
+        height: 40px;
+        padding: 10px;
+        font-size: 16px;
+        color: $violetPrimary;
+      }
+
+      a button:hover {
+        box-shadow: none;
+        color: $violetPrimary;
+      }
     }
-  
-    ul a {
-      font: $texto;
+  }
+}
+
+// .navDesktop {
+//   width: 100vw;
+
+//   .waveNav {
+//     width: 110vw;
+//     position: relative;
+//     bottom: 15px;
+//   }
+
+//   ul {
+//     width: 100vw;
+//     position: relative;
+//     z-index: 10;
+//     background-color: $violetPrimary;
+//     display: flex;
+//     justify-content: space-around;
+//     padding: 0;
+//     margin: 0;
+//     gap: 10px;
+//   }
+
+//   ul a {
+//     font: $texto;
+//     font-size: 16px;
+//   }
+
+//   img {
+//     width: 150px;
+//     position: relative;
+//     right: 0px;
+//     margin: 0;
+//   }
+//   .logoMenu {
+//     padding-left: 10px;
+//   }
+//   .menu {
+//     width: 60%;
+//     display: flex;
+//     justify-content: center;
+//   }
+//   .menuBotones {
+//     width: 20%;
+//     padding-right: 18%;
+//   }
+//   button {
+//     border: none;
+//     border-radius: 10px;
+//     height: 50px;
+//     padding: 15px;
+//     font-size: 16px;
+//     position: relative;
+//     left: 60px;
+//   }
+//   li {
+//     // margin-top: 15px;
+//   }
+// }
+
+.navbarMobile {
+  @include responsive(pc) {
+    display: none;
+  }
+
+  background-color: #c42089;
+}
+
+.logoNavMobile {
+  width: 30%;
+}
+
+.navbar-nav {
+  height: 60vh;
+  margin-top: 50px;
+
+  li {
+    a {
+      font: $subtitulo;
       font-size: 18px;
     }
-  
-    img {
-      width: 150px;
-      position: relative;
-      right: 100px;
-    }
-  
-    button {
-      border: none;
-      border-radius: 10px;
-      height: 50px;
-      padding: 15px;
-      font-size: 16px;
-      position: relative;
-      left: 60px;
-    }
-    li {
-      margin-top: 15px;
-    }
-  }
-  
-  .navbarMobile {
-    @include responsive(tablet) {
-      display: none;
-    }
-  
-    background-color: $violetPrimary;
-  }
-  
-  .logoNavMobile {
-    width: 30%;
-  }
-  .navbar-nav {
-    height: 60vh;
-    margin-top: 50px;
-    li {
-        a {
-            font:$subtitulo;
-            font-size: 18px;
-        }
-        width: 80%;
-        text-align: right;
-    }
 
-    h3 {
-        font-size: 22px;
-        color: white;
-        text-align: right;
-        width: 80%;
-
-    }
+    width: 80%;
+    text-align: right;
   }
+
+  h3 {
+    font-size: 22px;
+    color: white;
+    text-align: right;
+    width: 80%;
+  }
+}

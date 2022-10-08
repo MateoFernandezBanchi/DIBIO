@@ -1,0 +1,367 @@
+@import "./global";
+@import "./_variables";
+
+.resultadosContainer {
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  height: 100vh;
+  font: $texto;
+  margin: 30px auto 50px auto;
+}
+.resultadosText {
+  width: 60%;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    width: 50%;
+    font: $titulo;
+    font-size: 45px;
+    font-weight: 700;
+    color: $violetPrimary;
+    line-height: 70px;
+    span {
+      color: $violetSecondary;
+    }
+  }
+  .textoResultados {
+    font-size: 17px !important;
+
+    .enfasisResultados {
+      color: $violetSecondary;
+    }
+  }
+  .containerBotonesResultados {
+    display: flex;
+    justify-content: flex-start;
+    margin: 60px 0px 0px 20px;
+    gap: 30px;
+
+    .verResultados {
+      margin: 0px;
+      height: 55px !important;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        -10px -10px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+    }
+    .verResultados:active {
+      box-shadow: none;
+      border-radius: 6px;
+      height: 40px;
+      padding: 10px;
+      font-size: 16px;
+      color: white;
+    }
+    .verResultados:hover {
+      box-shadow: none;
+      color: white;
+    }
+    .buttonBot {
+      margin: 0px;
+      height: 55px !important;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+        -10px -10px 20px rgba(0, 0, 0, 0.25);
+      border-radius: 6px;
+    }
+    .buttonBot:active {
+      box-shadow: none;
+      border-radius: 6px;
+      height: 40px;
+      padding: 10px;
+      font-size: 16px;
+      color: white;
+    }
+    .buttonBot:hover {
+      box-shadow: none;
+      color: white;
+    }
+  }
+}
+.resultadosImageMobile {
+  display: none;
+  align-self: center;
+}
+.resultadosImage {
+  grid-area: imagen;
+  width: 40%;
+  display: flex;
+  img {
+    width: 45%;
+    height: fit-content;
+    padding-left: 30px;
+  }
+  .innOne {
+    position: relative;
+    top: 50px;
+    right: 50px;
+    filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+    -webkit-animation-name: circ-2;
+    animation-name: nube3;
+    -webkit-animation-duration: 3s;
+    animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes nube3 {
+    0% {
+      transform: translateY(20px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+
+    100% {
+      transform: translateY(20px);
+    }
+  }
+  .innTwo {
+    position: relative;
+    top: 20px;
+    right: 50px;
+    filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+
+    -webkit-animation-name: circ-2;
+    animation-name: nube2;
+    -webkit-animation-duration: 3s;
+    animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes nube2 {
+    0% {
+      transform: translateY(-15px);
+    }
+    50% {
+      transform: translateY(0px);
+    }
+
+    100% {
+      transform: translateY(-15px);
+    }
+  }
+}
+
+.resultadosContainerMobile {
+  display: none;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .resultadosContainer {
+    display: none;
+  }
+  .resultadosContainerMobile {
+    display: flex;
+    width: 90vw;
+    margin: 80px 0px;
+    .resultadosTextMobile {
+      h2 {
+        width: 93%;
+        font: $titulo;
+        font-size: 9vw;
+        font-weight: 700;
+        color: $violetPrimary;
+        line-height: 50px;
+        span {
+          color: $violetSecondary;
+        }
+      }
+      .containerBotonesResultadosMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+        button {
+          width: 60%;
+          margin: 10px auto;
+        }
+      }
+    }
+    .primerParrafoImagenes {
+      margin: 20px 0px;
+      display: flex;
+      height: 22vh;
+      p {
+        width: 50vw;
+      }
+      .resultadosImageMobile {
+        width: 50vw;
+        display: inline;
+
+        img {
+          width: 50%;
+          height: auto;
+          padding-left: 30px;
+        }
+      }
+      .innOne {
+        position: relative;
+        top: 9vh;
+        right: 1vw;
+        filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+        -webkit-animation-name: circ-2;
+        animation-name: nube3Mobile;
+        -webkit-animation-duration: 3s;
+        animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+      }
+      @keyframes nube3Mobile {
+        0% {
+          transform: translateY(20px);
+        }
+        50% {
+          transform: translateY(0px);
+        }
+
+        100% {
+          transform: translateY(20px);
+        }
+      }
+      .innTwo {
+        position: relative;
+        top: -10vh;
+        right: -8vh;
+        filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+
+        -webkit-animation-name: circ-2;
+        animation-name: nube2Mobile;
+        -webkit-animation-duration: 3s;
+        animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+      }
+      @keyframes nube2Mobile {
+        0% {
+          transform: translateY(-15px);
+        }
+        50% {
+          transform: translateY(0px);
+        }
+
+        100% {
+          transform: translateY(-15px);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+  .resultadosContainer {
+    display: none;
+  }
+  .resultadosContainerMobile {
+    display: flex;
+    width: 90vw;
+    margin: 80px 0px;
+    .resultadosTextMobile {
+      h2 {
+        width: 93%;
+        font: $titulo;
+        font-size: 9vw;
+        font-weight: 700;
+        color: $violetPrimary;
+        line-height: 100px;
+        span {
+          color: $violetSecondary;
+        }
+      }
+      p {
+        font-size: 3vw;
+      }
+      .containerBotonesResultadosMobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0px;
+        button {
+          width: 50%;
+          margin: 10px auto;
+        }
+      }
+    }
+    .primerParrafoImagenes {
+      margin: 20px 0px;
+      display: flex;
+      height: 27vh;
+      p {
+        width: 50vw;
+        font-size: 3vw;
+      }
+      .resultadosImageMobile {
+        width: 50vw;
+        display: inline;
+
+        img {
+          width: 40%;
+          height: auto;
+          padding-left: 30px;
+        }
+      }
+      .innOne {
+        position: relative;
+        top: -2vh;
+        right: -2vw;
+        filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+        -webkit-animation-name: circ-2;
+        animation-name: nube3Mobile;
+        -webkit-animation-duration: 3s;
+        animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+      }
+      @keyframes nube3Mobile {
+        0% {
+          transform: translateY(20px);
+        }
+        50% {
+          transform: translateY(0px);
+        }
+
+        100% {
+          transform: translateY(20px);
+        }
+      }
+      .innTwo {
+        position: relative;
+        top: -3vh;
+        right: 0vh;
+        filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+
+        -webkit-animation-name: circ-2;
+        animation-name: nube2Mobile;
+        -webkit-animation-duration: 3s;
+        animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out;
+      }
+      @keyframes nube2Mobile {
+        0% {
+          transform: translateY(-15px);
+        }
+        50% {
+          transform: translateY(0px);
+        }
+
+        100% {
+          transform: translateY(-15px);
+        }
+      }
+    }
+  }
+}

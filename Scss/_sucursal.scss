@@ -21,7 +21,7 @@
 .sucursalInformacion {
   overflow: hidden;
   width: 100vw;
-  padding: 50px;
+  // padding: 50px;
   padding-top: 0;
 
   &__Opciones {
@@ -38,14 +38,17 @@
   cursor: pointer;
   display: flex;
   align-items: flex-end;
-  height:10rem;
+  height: 10rem;
   flex-direction: row;
+
   img {
     width: 60px;
   }
+
   h3 {
-    display:none;
+    display: none;
   }
+
   @include responsive(mobile) {
     h4 {
       font-size: 16px;
@@ -57,11 +60,13 @@
   cursor: pointer;
   padding: 30px;
   width: 100%;
-  height:100%;
+  height: 100%;
   text-align: center;
   font: $subtitulo;
-  @include responsive(mobile){
+
+  @include responsive(mobile) {
     padding: 0;
+
     h3 {
       margin-left: 0;
     }
@@ -71,15 +76,17 @@
 .sucursalBoton {
   cursor: pointer;
   display: flex;
-  height:70%;
+  height: 70%;
   color: white;
   text-decoration: none;
   padding: 20px;
   width: 33.33%;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
+
   &:hover {
     background-color: $violetTertiary;
   }
+
   @include responsive(mobile) {
     max-height: 100px;
   }
@@ -88,81 +95,99 @@
 .btnWhite {
   cursor: pointer;
   padding: 20px;
-  height:100%;
-  color:white;
+  height: 100%;
+  color: white;
   width: 33.33%;
-  border-radius: 10px 10px 0 0 ;
+  border-radius: 10px 10px 0 0;
+
   h3 {
     display: block;
     font-size: 20px;
     text-align: left;
-    margin-left:6.6rem;
+    margin-left: 6.6rem;
+
     @include responsive(mobile) {
-     font-size: 14px;
-     padding: 2px;
+      font-size: 14px;
+      padding: 2px;
     }
   }
+
   @include responsive(mobile) {
     max-height: 130px;
+
     h3 {
       margin-left: 0;
       text-align: center;
     }
   }
 }
+
 #sucursal1 {
   background-color: #A82585;
 }
+
 #sucursal2 {
   background-color: #CF3BA8;
 }
+
 #sucursal3 {
   background-color: #C7319FD9;
 }
+
 a {
   text-decoration: none;
 }
 
 .test {
   font: $texto;
-  display:flex;
+  display: flex;
   margin: 50px auto 0px auto;
   justify-content: space-between;
-  width:80vw;
-  position:relative;
-  bottom:250px;
+  width: 80vw;
+  position: relative;
+  bottom: 250px;
+
   h4 {
     color: $violetSecondary;
     font-size: 30px;
   }
+
   p {
-    margin:0;
-    margin-left:20px;
+    margin: 0;
+    margin-left: 20px;
     font-size: 25px;
   }
-  @include responsive(mobile) {
+
+  @include responsive(tablet) {
     flex-direction: column-reverse;
     width: 100vw;
     position: relative;
-    bottom: 100px;
+    bottom: 30vh;
+    align-items: center;
+
     img {
       width: 50px;
     }
   }
 }
+
 .contactoSucursal {
   margin: 25px auto;
+
   p {
-    @include responsive(mobile) {
+    @include responsive(tablet) {
       font-size: 18px;
     }
   }
 }
-.fa-solid, .fa-brands {
-  font-size:35px;
-  color:$violetSecondary;
+
+.fa-solid,
+.fa-brands {
+  font-size: 35px;
+  color: $violetSecondary;
 
 }
+
 .ubicacionSucursal {
   position: relative;
   bottom: 100px;
@@ -171,30 +196,37 @@ a {
   align-items: center;
   text-align: center;
   width: 40vw;
+
   h4 {
-    font:$titulo;
+    font: $titulo;
     font-size: 20px;
     color: $violetSecondary;
     font-weight: bold;
   }
+
   p {
     margin: 5px auto;
   }
+
   .p1 {
     font-size: 30px;
   }
+
   .p2 {
-    font-size:23px;
+    font-size: 23px;
   }
-  .p3{
+
+  .p3 {
     font-size: 20px;
   }
-  @include responsive(mobile){
+
+  @include responsive(mobile) {
     bottom: 0;
     margin-top: 0;
     width: 80vw;
   }
 }
+
 // MOBILE
 .sucursalesMobile {
   @include responsive(tablet) {
@@ -247,15 +279,29 @@ a {
     font-size: 16px;
   }
 }
-.imgCentral, .sucursalInformacion {
-  @include responsive(mobile) {
+
+.imgCentral,
+.sucursalInformacion {
+  @include responsive(tablet) {
     width: 100vw;
   }
 }
+
+.imgCentral {
+  @include responsive(tablet) {
+    height: 40vh;
+  }
+}
+
 .contactoSucursales {
   height: 40vh;
   margin-top: 150px;
+
+  @include responsive(tablet) {
+    margin-top: 5vh;
+  }
 }
+
 .sucursalTitle {
   position: relative;
   bottom: 160px;
@@ -263,14 +309,28 @@ a {
   color: white;
   font-size: 40px;
   width: 40%;
-  margin-left:80px;
+  margin-left: 80px;
+
+  @include responsive(tablet) {
+    bottom: 30vh;
+  }
 }
+
+
 .logoUbicacion {
   animation: logoAnimado 5s infinite;
 }
 
 @keyframes logoAnimado {
-  0%   {transform: translateY(-20px);}
-   50% {transform: translateY(30px)}
-  100%  {transform: translateY(-20px);}
+  0% {
+    transform: translateY(-20px);
+  }
+
+  50% {
+    transform: translateY(30px)
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
 }

@@ -6,6 +6,7 @@
     text-align: center;
     padding: 20px;
   }
+
   h2 {
     font: $titulo;
     font-size: 55px;
@@ -15,10 +16,10 @@
     text-align: center;
     width: 50%;
     margin: 0 auto;
-    @include responsive(mobile) {
+
+    @include responsive(tablet) {
       font-size: 30px;
       line-height: 50px;
-      margin-top: 200px;
     }
   }
 }
@@ -47,17 +48,22 @@
     margin-left: 2rem;
   }
 
-  @include responsive(mobile) {
+  @include responsive(tablet) {
     width: 100vw;
     padding: 15px;
-    h3, p, form {
-      padding:5px;
+
+    h3,
+    p,
+    form {
+      padding: 5px;
       margin: 20px 0;
     }
+
     h3 {
       font-size: 20px;
-      
+
     }
+
     .datosContacto {
       margin-left: 0px;
     }
@@ -72,7 +78,7 @@
   padding: 50px;
   border-radius: 10px;
 
-  @include responsive(mobile) {
+  @include responsive(tablet) {
     padding: 15px;
     width: 100vw;
     overflow-x: hidden;
@@ -119,20 +125,24 @@ textarea {
   background-color: $violetSecondary;
   width: 240px;
 }
+
 .btnSiguiente {
-  display:none;
-  @include responsive(mobile) {
-    display:block;
+  display: none;
+
+  @include responsive(tablet) {
+    display: block;
   }
 }
+
 .btnAtras {
-  @include responsive(mobile) {
+  @include responsive(tablet) {
     display: block;
     border: none;
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
   }
+
   display: none;
 }
 
@@ -186,7 +196,7 @@ select::-ms-expand {
   color: $violetSecondary;
 }
 
-// MOBILE
+// tablet
 .contactForm {
   background-color: white;
   width: 48%;
@@ -194,25 +204,25 @@ select::-ms-expand {
   margin: 0 auto;
   border-radius: 10px;
 
-  @include responsive(mobile) {
+  @include responsive(tablet) {
     background-color: white;
     position: absolute;
-    width: 90%;
-    height: 93%;
-    top: 20px;
-    transform: translateX(480px);
+    width: 98%;
+    height: 100%;
+    top: 0px;
+    transform: translateX(100vw);
     transition: 1s;
   }
 }
 
 .contactFormChanged {
-  @include responsive(mobile) {
+  @include responsive(tablet) {
     background-color: white;
     position: absolute;
-    width: 90%;
-    height: 93%;
-    top: 20px;
-    transform: translateX(0px);
+    width: 98%;
+    height: 100%;
+    top: 0px;
+    transform: translateX(0);
     transition: 1s;
   }
 }
@@ -223,7 +233,7 @@ select::-ms-expand {
   }
 }
 
-.datosContactoMobile {
+.datosContactotablet {
   @include responsive(tablet) {
     display: none;
   }
@@ -242,7 +252,8 @@ select::-ms-expand {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  @include responsive(mobile) {
+
+  @include responsive(tablet) {
     font-size: 16px;
   }
 }
@@ -298,13 +309,16 @@ select::-ms-expand {
   border-radius: 50%;
   background: $violetSecondary;
 }
+
 textarea {
   resize: none;
-  @include responsive(mobile) {
+
+  @include responsive(tablet) {
     height: 80px;
     width: 100%;
   }
 }
+
 #dni {
   position: relative;
   top: 24px;
