@@ -28,7 +28,7 @@
   background-color: $violetPrimary;
   color: white;
   padding: 30px;
-  width: 48%;
+  width: 42vw;
   font: $subtituloLight;
   font-size: 18px;
   border-radius: 10px;
@@ -85,6 +85,19 @@
   }
 }
 
+.paso3 {
+  color: $violetPrimary;
+  margin: 0 auto;
+  padding: 50px;
+
+  @include responsive(tablet) {
+    align-self: center;
+    text-align: center;
+    margin-top: 3vh;
+    padding: 0 3vw;
+  }
+}
+
 input {
   padding: 10px 20px;
   border: none;
@@ -92,6 +105,10 @@ input {
   margin: 20px;
   outline: none;
   width: 80%;
+
+  @include responsive(tablet) {
+    padding: 5px 20px;
+  }
 }
 
 // input:focus {
@@ -108,6 +125,7 @@ textarea {
   display: block;
   margin: 0 auto;
   outline: none;
+
 }
 
 .btnContacto {
@@ -118,7 +136,7 @@ textarea {
   border-radius: 10px;
   font: $texto;
   display: block;
-  margin: 20px auto
+  margin: 40px auto
 }
 
 .btnContacto2 {
@@ -128,6 +146,11 @@ textarea {
 
 .btnSiguiente {
   display: none;
+  background-color: white;
+  color: $violetPrimary;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.25);
 
   @include responsive(tablet) {
     display: block;
@@ -207,23 +230,30 @@ select::-ms-expand {
   @include responsive(tablet) {
     background-color: white;
     position: absolute;
-    width: 98%;
-    height: 100%;
-    top: 0px;
+    width: 93%;
+    height: 95%;
+    top: 1rem;
     transform: translateX(100vw);
     transition: 1s;
   }
 }
 
 .contactFormChanged {
+  background-color: white;
+  width: 42vw;
+  margin: 0 auto;
+  border-radius: 10px;
+
   @include responsive(tablet) {
-    background-color: white;
     position: absolute;
-    width: 98%;
-    height: 100%;
-    top: 0px;
+    width: 93%;
+    height: 95%;
+    top: 1rem;
     transform: translateX(0);
     transition: 1s;
+    // box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    // -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    // -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   }
 }
 
@@ -236,6 +266,22 @@ select::-ms-expand {
 .datosContactotablet {
   @include responsive(tablet) {
     display: none;
+  }
+}
+
+.containerArchivo {
+  @include responsive(tablet) {
+    flex-direction: column;
+  }
+}
+
+.adjuntarArchivo {
+  width: 400px;
+  text-align: center;
+
+  @include responsive(tablet) {
+    width: 90vw;
+    text-align: left;
   }
 }
 
@@ -314,8 +360,8 @@ textarea {
   resize: none;
 
   @include responsive(tablet) {
-    height: 80px;
-    width: 100%;
+    height: 50px;
+    width: 90%;
   }
 }
 

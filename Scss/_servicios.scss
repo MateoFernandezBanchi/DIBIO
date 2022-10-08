@@ -178,6 +178,10 @@
         margin-left: 15vw;
     }
 
+    .accordion-button:focus {
+        color: white;
+    }
+
     @include responsive(tablet) {
         .accordion-item {
             width: 100%;

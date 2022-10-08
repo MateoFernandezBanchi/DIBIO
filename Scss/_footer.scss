@@ -60,7 +60,13 @@
 .navFooter {
     margin-top: 50px;
 
-    @include responsive(mobile) {
+    @include responsive(tablet) {
+        display: none;
+    }
+}
+
+.iconsFooter {
+    @include responsive(pc) {
         display: none;
     }
 }
