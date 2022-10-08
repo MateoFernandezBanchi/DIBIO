@@ -8,6 +8,7 @@
 
     @include responsive(mobile) {
       width: 90%;
+
     }
   }
 
@@ -24,6 +25,7 @@
     @include responsive(tablet) {
       font-size: 30px;
       line-height: 50px;
+      width: 100vw;
     }
   }
 }
