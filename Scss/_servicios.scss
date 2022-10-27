@@ -1,275 +1,276 @@
 .servicios {
-    @include responsive(tablet) {
-        display: none;
+  @include responsive(tablet) {
+    display: none;
+  }
+
+  margin: 50px auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .serviciosText {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h2 {
+      font: $titulo;
+      font-size: 55px;
+      font-weight: 700;
+      color: $violetPrimary;
+      line-height: 95px;
+      width: 100%;
     }
 
-    margin: 50px auto;
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
+    p {
+      width: 100%;
+      font-size: 20px;
+    }
+
+    .serviciosImg {
+      img {
+        width: 250px;
+      }
+    }
+  }
+
+  .serviciosCardsContainer {
+    width: 100vw;
     justify-content: center;
+  }
 
-    .serviciosText {
-        text-align: center;
-        margin-bottom: 50px;
+  .serviciosCardsBackground {
+    width: 20%;
+    flex: 1;
+    // background-image: url("../Assets/imagenes2/scientist2.jpg");
+    transition: all 1s;
+    display: flex;
 
-        h2 {
-            font: $titulo;
-            font-size: 55px;
-            font-weight: 700;
-            color: $violetPrimary;
-            line-height: 95px;
-            width: 100%;
-        }
+    h3,
+    img {
+      transition: all 1s;
+    }
+  }
 
-        p {
-            width: 100%;
-            font-size: 20px;
-        }
+  .back0 {
+    background-image: url("../Assets/imagenes/AnalisisHumanos.jpg");
+    background-size: cover;
+  }
 
-        .serviciosImg {
-            img {
-                width: 250px;
-            }
-        }
+  .back1 {
+    background-image: url("../Assets/imagenes/AtencionNiños.jpg");
+    background-size: cover;
+  }
+
+  .back2 {
+    background-image: url("../Assets/imagenes/AtencionDomicilio.jpg");
+    background-size: cover;
+  }
+
+  .back3 {
+    background-image: url("../Assets/imagenes/AnalisisVeterinarios.jpg");
+    background-size: cover;
+  }
+
+  .back4 {
+    background-image: url("../Assets/imagenes/AnalisisAgua.jpg");
+    background-size: cover;
+  }
+
+  .serviciosParrafo {
+    display: none;
+
+    p {
+      font: $texto;
+      color: white;
+      font-size: 20px;
+      height: 100px;
+    }
+  }
+
+  .serviciosCardsBackground:hover {
+    flex: 80%;
+
+    img {
+      transform: scale(0.95);
+      transform: translateY(80px);
+      margin-left: 5%;
     }
 
-    .serviciosCardsContainer {
-        width: 100vw;
-        justify-content: center;
-    }
+    h3 {
+      transform: rotate(-90deg);
 
-    .serviciosCardsBackground {
-        width: 20%;
-        flex: 1;
-        // background-image: url("../Assets/imagenes2/scientist2.jpg");
-        transition: all 1s;
-        display: flex;
-
-        h3,
-        img {
-            transition: all 1s;
-        }
-    }
-
-    .back0 {
-        background-image: url("../Assets/imagenes/AnalisisHumanos.jpg");
-        background-size: cover;
-    }
-
-    .back1 {
-        background-image: url("../Assets/imagenes/AtencionNiños.jpg");
-        background-size: cover;
-    }
-
-    .back2 {
-        background-image: url("../Assets/imagenes/AtencionDomicilio.jpg");
-        background-size: cover;
-    }
-
-    .back3 {
-        background-image: url("../Assets/imagenes/AnalisisVeterinarios.jpg");
-        background-size: cover;
-    }
-
-    .back4 {
-        background-image: url("../Assets/imagenes/AnalisisAgua.jpg");
-        background-size: cover;
-    }
-
-    .serviciosParrafo {
-        display: none;
-
-        p {
-            font: $texto;
-            color: white;
-            font-size: 20px;
-            height: 100px;
-        }
-    }
-
-    .serviciosCardsBackground:hover {
-        flex: 80%;
-
-        img {
-            transform: scale(.95);
-            transform: translateY(80px);
-            margin-left: 5%;
-        }
-
-        h3 {
-            transform: rotate(-90deg);
-
-            width: 80%;
-            // margin-left: 50%;
-        }
-
-        .serviciosCards {
-            align-items: flex-start;
-            gap: 150px;
-        }
-
-        .serviciosParrafo {
-            background-color: rgba($violetPrimary, 0.5);
-            display: flex;
-            align-items: center;
-            height: 100%;
-        }
-
-        p {
-            animation-name: paragraph;
-            animation-duration: 1.5s;
-        }
-    }
-
-    @keyframes paragraph {
-
-        0% {
-            opacity: 0%
-        }
-
-        25% {
-            opacity: 25%
-        }
-
-        50% {
-            opacity: 50%
-        }
-
-        100% {
-            opacity: none
-        }
-
+      width: 80%;
+      // margin-left: 50%;
     }
 
     .serviciosCards {
-        background-color: rgba($violetPrimary, 0.5);
-        width: 100%;
-        height: 90vh;
-        text-align: center;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 50%;
-            padding: 30px 0;
-
-        }
-
-        h3 {
-            color: white;
-            font-size: 30px;
-            font: $subtitulo;
-        }
+      align-items: flex-start;
+      gap: 150px;
     }
 
+    .serviciosParrafo {
+      background-color: rgba($violetPrimary, 0.5);
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
+    p {
+      animation-name: paragraph;
+      animation-duration: 1.5s;
+    }
+  }
+
+  @keyframes paragraph {
+    0% {
+      opacity: 0%;
+    }
+
+    25% {
+      opacity: 25%;
+    }
+
+    50% {
+      opacity: 50%;
+    }
+
+    100% {
+      opacity: none;
+    }
+  }
+
+  .serviciosCards {
+    background-color: rgba($violetPrimary, 0.5);
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 50%;
+      padding: 30px 0;
+    }
+
+    h3 {
+      color: white;
+      font-size: 30px;
+      font: $subtitulo;
+    }
+  }
 }
 
 // MOBILE
 .serviciosMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  .accordion {
+    width: 100vw;
+    // margin-left: 15vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    margin: 0 !important;
+  }
+
+  .accordion-header {
+    width: 100%;
+  }
+  .accordion-button:focus {
+    color: white;
+  }
+
+  @include responsive(tablet) {
+    .accordion-item {
+      width: 100%;
+    }
+  }
+
+  @include responsive(mobile) {
+    .accordion-item {
+      width: 90%;
+      margin-left: 0;
+    }
 
     .accordion {
-        width: 100vw;
-        margin-left: 15vw;
+      width: 100vw;
+      margin-left: 5vw;
     }
+  }
 
-    .accordion-button:focus {
-        color: white;
+  @include responsive(pc) {
+    display: none;
+  }
+
+  button {
+    color: white;
+    font: $texto;
+  }
+
+  .serviciosTitle {
+    width: 50%;
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+
+  h2 {
+    width: 100%;
+    font: $titulo;
+    font-size: 9vw;
+    font-weight: 700;
+    color: $violetPrimary;
+    margin: 0 0 30px;
+    text-align: center;
+
+    span {
+      color: $violetSecondary;
     }
+  }
 
-    @include responsive(tablet) {
-        .accordion-item {
-            width: 100%;
-        }
+  .item1 h2 button {
+    background-color: #662483b2;
 
+    img {
+      width: 50px;
     }
+  }
 
-    @include responsive(mobile) {
-        .accordion-item {
-            width: 90%;
-            margin-left: 0;
-        }
+  .item2 h2 button {
+    background-color: #772484b2;
 
-        .accordion {
-            width: 100vw;
-            margin-left: 5vw;
-        }
-
+    img {
+      width: 50px;
     }
+  }
 
-    @include responsive(pc) {
-        display: none;
+  .item3 h2 button {
+    background-color: #872584b2;
+
+    img {
+      width: 50px;
     }
+  }
 
-    button {
-        color: white;
-        font: $texto;
+  .item4 h2 button {
+    background-color: #982585b2;
 
+    img {
+      width: 50px;
     }
+  }
 
-    .serviciosTitle {
-        width: 50%;
-        margin: 0 auto;
+  .item5 h2 button {
+    background-color: #a82585b2;
+
+    img {
+      width: 50px;
     }
-
-    h2 {
-        font: $titulo;
-        font-size: 30px;
-        font-weight: 700;
-        color: $violetPrimary;
-        line-height: 50px;
-
-        span {
-            color: $violetSecondary;
-        }
-    }
-
-    .item1 h2 button {
-        background-color: #662483B2;
-
-        img {
-            width: 50px;
-        }
-    }
-
-    .item2 h2 button {
-        background-color: #772484B2;
-
-        img {
-            width: 50px;
-        }
-    }
-
-    .item3 h2 button {
-        background-color: #872584B2;
-
-        img {
-            width: 50px;
-        }
-    }
-
-    .item4 h2 button {
-        background-color: #982585B2;
-
-        img {
-            width: 50px;
-        }
-    }
-
-    .item5 h2 button {
-        background-color: #A82585B2;
-
-        img {
-            width: 50px;
-        }
-    }
-
-
+  }
 }
