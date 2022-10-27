@@ -7,11 +7,12 @@
   width: 95%;
   height: 100vh;
   font: $texto;
-  margin: 30px auto 50px auto;
+  margin: 0 auto;
+  align-items: center;
 }
 
 .innovacionText {
-  width: 70%;
+  width: 60%;
   margin: 40px 0;
 
   h2 {
@@ -53,19 +54,72 @@
   .logoUno {
     z-index: 2;
     position: relative;
-    top: 45px;
+    top: 140px;
   }
 
   .logoDos {
     z-index: 3;
-    position: relative;
-    top: -125px;
   }
 
   .logoTres {
     z-index: 1;
     position: relative;
-    top: -310px;
+    top: -148px;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1300px) {
+  .innovacionImage {
+    .logoUno {
+      top: 165px;
+    }
+    .logoTres {
+      top: -178px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
+  .innovacionImage {
+    .logoUno {
+      top: 200px;
+    }
+    .logoTres {
+      top: -215px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1700px) {
+  .innovacionImage {
+    .logoUno {
+      top: 235px;
+    }
+    .logoTres {
+      top: -255px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 1900px) {
+  .innovacionImage {
+    .logoUno {
+      top: 267px;
+    }
+    .logoTres {
+      top: -290px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .innovacionImage {
+    .logoUno {
+      top: 290px;
+    }
+    .logoTres {
+      top: -315px;
+    }
   }
 }
 
@@ -83,12 +137,12 @@
     margin: 40px 0;
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 0.8fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: auto 2fr auto;
     grid-template-areas:
       "titulo titulo"
-      "textoUno imagen"
-      "textoDos textoDos"
+      "textoUno textoUno"
+      "textoDos imagen"
       "textoTres textoTres";
 
     h2 {
@@ -96,10 +150,12 @@
       font-weight: 700;
       color: $violetPrimary;
       grid-area: titulo;
-      width: 90%;
+      width: 100%;
       height: min-content;
       font-size: 9vw;
       line-height: 100px;
+      margin: 0 0 20px;
+      text-align: center;
 
       span {
         color: $violetSecondary;
@@ -115,25 +171,27 @@
     }
 
     .textMobileOne {
-      width: 78% !important;
+      width: 100% !important;
       grid-area: textoUno;
-      width: auto;
-      margin: 50px 0px 10px 20px;
+      margin: 0;
       font-size: 22px;
     }
 
     .textMobileTwo {
-      width: auto;
+      width: 90%;
       grid-area: textoDos;
-      margin: 0px 20px 20px 20px;
+      margin: 0;
       font-size: 22px;
+      align-self: center;
+      justify-self: auto;
     }
 
     .textMobileThree {
       width: auto;
       grid-area: textoTres;
-      margin: 0px 20px 20px 20px;
+      margin: 10px 0 0;
       font-size: 22px;
+      text-align: justify;
     }
   }
 
@@ -142,10 +200,10 @@
     display: inline;
     grid-area: imagen;
     width: 100%;
+    text-align: center;
 
     img {
-      width: 100%;
-      padding-left: 30px;
+      width: 70%;
     }
 
     .logoMobile {
@@ -205,20 +263,22 @@
     grid-template-rows: auto 2fr auto;
     grid-template-areas:
       "titulo titulo"
-      "textoUno imagen"
-      "textoDos textoDos"
+      "textoUno textoUno"
+      "textoDos imagen"
       "textoTres textoTres";
+    row-gap: 20px;
 
     h2 {
       font: $titulo;
       font-weight: 700;
       color: $violetPrimary;
-
       grid-area: titulo;
-      width: 90%;
+      width: 100%;
       height: min-content;
       font-size: 30px;
       line-height: 50px;
+      margin: 0;
+      text-align: center;
 
       span {
         color: $violetSecondary;
@@ -235,23 +295,25 @@
 
     .textMobileOne {
       grid-area: textoUno;
-      width: auto;
-      margin: 30px 0px 20px 20px;
+      width: 100%;
+      margin: 0;
       font-size: 18px;
     }
 
     .textMobileTwo {
-      width: auto;
+      width: 90%;
       grid-area: textoDos;
-      margin: 0px 20px 20px 20px;
+      margin: 0;
       font-size: 18px;
+      align-self: center;
     }
 
     .textMobileThree {
-      width: auto;
+      width: 100%;
       grid-area: textoTres;
-      margin: 0px 20px 20px 20px;
+      margin: 0;
       font-size: 18px;
+      text-align: justify;
     }
   }
 
@@ -263,7 +325,6 @@
 
     img {
       width: 100%;
-      padding-left: 30px;
 
       .logoMobile {
         z-index: 3;
@@ -302,6 +363,4 @@
 
     display: none;
   }
-}
-
-;
+} ;

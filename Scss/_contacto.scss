@@ -1,4 +1,15 @@
 .contactContainer {
+  width: 95%;
+  margin: 80px auto 0;
+  @include responsive(tablet) {
+    width: 100%;
+    margin: 50px 0 0 0;
+  }
+  .containerTitulo {
+    @include responsive(pc) {
+      padding-top: 120px;
+    }
+  }
   .parrafoIntroContacto {
     width: 60%;
     margin: 0 auto;
@@ -8,7 +19,6 @@
 
     @include responsive(mobile) {
       width: 90%;
-
     }
   }
 
@@ -25,7 +35,7 @@
     @include responsive(tablet) {
       font-size: 30px;
       line-height: 50px;
-      width: 100vw;
+      width: 100%;
     }
   }
 }
@@ -34,7 +44,6 @@
   background-color: $violetPrimary;
   color: white;
   padding: 30px;
-  width: 42vw;
   font: $subtituloLight;
   font-size: 18px;
   border-radius: 10px;
@@ -48,6 +57,9 @@
   p {
     color: white;
     padding: 20px;
+    @include responsive(tablet) {
+      font-size: 2.7vw;
+    }
   }
 
   form {
@@ -67,7 +79,6 @@
 
     h3 {
       font-size: 20px;
-
     }
 
     .datosContacto {
@@ -79,22 +90,24 @@
 .contactMain {
   position: relative;
   background-color: $violetSecondary;
-  margin: 60px auto;
-  width: 95vw;
+  margin: 60px auto 0;
+  width: 100%;
   padding: 50px;
   border-radius: 10px;
 
   @include responsive(tablet) {
     padding: 15px;
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100%;
+    overflow: hidden;
+    border-bottom-right-radius: initial;
+    border-bottom-left-radius: initial;
   }
 }
 
 .paso3 {
   color: $violetPrimary;
   margin: 0 auto;
-  padding: 50px;
+  padding: 20px 50px 50px 50px;
 
   @include responsive(tablet) {
     align-self: center;
@@ -105,15 +118,19 @@
 }
 
 input {
-  padding: 10px 20px;
+  padding: 10px 20px 10px 0;
   border: none;
   border-bottom: 3px solid $violetSecondary;
   margin: 20px;
   outline: none;
-  width: 80%;
+  width: 90%;
+  @include responsive(pc) {
+    font-size: 1vw;
+  }
 
   @include responsive(tablet) {
-    padding: 5px 20px;
+    padding: 5px 20px 5px 0;
+    font-size: 12px;
   }
 }
 
@@ -131,7 +148,12 @@ textarea {
   display: block;
   margin: 0 auto;
   outline: none;
-
+  @include responsive(pc) {
+    font-size: 1vw;
+  }
+  @include responsive(tablet) {
+    font-size: 12px;
+  }
 }
 
 .btnContacto {
@@ -142,7 +164,10 @@ textarea {
   border-radius: 10px;
   font: $texto;
   display: block;
-  margin: 40px auto
+  margin: 40px auto;
+  @include responsive(tablet) {
+    margin: 40px auto 120px;
+  }
 }
 
 .btnContacto2 {
@@ -196,15 +221,15 @@ textarea {
   border: none;
   border-bottom: 2px solid white;
   background: $violetPrimary;
-  background-image: url('../Assets/imagenes/dropdown.png');
+  background-image: url("../Assets/imagenes/dropdown.png");
   background-repeat: no-repeat;
   background-position: right;
   flex: 1;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   color: #fff;
   cursor: pointer;
   font-size: 1em;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   width: 200px;
 }
 
@@ -219,12 +244,12 @@ select::-ms-expand {
   height: 3em;
   line-height: 3;
   overflow: hidden;
-  border-radius: .25em;
+  border-radius: 0.25em;
   margin-bottom: 50px;
 }
 
 .select::after {
-  content: '\25BC';
+  content: "\25BC";
   position: absolute;
   top: 0;
   right: 0;
@@ -232,21 +257,30 @@ select::-ms-expand {
   background: none;
   cursor: pointer;
   pointer-events: none;
-  transition: .25s all ease;
+  transition: 0.25s all ease;
 }
 
 .select:hover::after {
   color: $violetSecondary;
 }
 
-// tablet
 .contactForm {
   background-color: white;
   width: 48%;
   padding: 25px;
   margin: 0 auto;
   border-radius: 10px;
+  .contactForm__item {
+    width: 100%;
+    label.labelNacimiento {
+      margin-left: 20px;
+      font-size: 1vw;
+      position: relative;
+      top: 16px;
+    }
+  }
 
+  // tablet
   @include responsive(tablet) {
     background-color: white;
     position: absolute;
@@ -266,25 +300,42 @@ select::-ms-expand {
 
   @include responsive(tablet) {
     position: absolute;
-    width: 93%;
-    height: 95%;
+    width: 97%;
+    height: 96%;
     top: 1rem;
     transform: translateX(0);
     transition: 1s;
     // box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     // -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     // -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    @include responsive(mobile) {
+      width: 93%;
+    }
+    label.labelNacimiento {
+      margin-left: 20px;
+      font-size: 14px;
+      position: relative;
+      top: 16px;
+    }
   }
 }
 
 .datosContacto {
+  margin-top: 48px;
+  @include responsive(tablet) {
+    margin-top: 10px;
+  }
   h3 {
     margin-left: 0;
   }
 
   p {
     padding: 0;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    width: 90%;
+    @include responsive(tablet) {
+      margin-top: 0px;
+    }
   }
 }
 
@@ -294,18 +345,33 @@ select::-ms-expand {
   }
 }
 
-.containerArchivo {
+.containerNacimiento {
+  div {
+    width: 50%;
+    @include responsive(tablet) {
+      width: 100%;
+    }
+  }
   @include responsive(tablet) {
     flex-direction: column;
   }
 }
 
-.adjuntarArchivo {
-  width: 400px;
-  text-align: center;
-
+.containerArchivo {
   @include responsive(tablet) {
-    width: 90vw;
+    flex-direction: column;
+  }
+  @include responsive(pc) {
+    align-items: flex-end;
+    div {
+      width: 50%;
+    }
+  }
+}
+
+.adjuntarArchivo {
+  @include responsive(tablet) {
+    width: 100%;
     text-align: left;
   }
 }
@@ -352,12 +418,12 @@ select::-ms-expand {
 }
 
 /* On mouse-over, add a grey background color */
-.container:hover input~.checkmark {
+.container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked~.checkmark {
+.container input:checked ~ .checkmark {
   background-color: white;
 }
 
@@ -369,7 +435,7 @@ select::-ms-expand {
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked~.checkmark:after {
+.container input:checked ~ .checkmark:after {
   display: block;
 }
 
@@ -385,14 +451,29 @@ select::-ms-expand {
 
 textarea {
   resize: none;
+  text-align: center;
 
   @include responsive(tablet) {
     height: 50px;
     width: 90%;
+    margin: 0 0 0 20px;
   }
 }
 
 #dni {
-  position: relative;
-  top: 24px;
+  width: 90%;
+}
+
+#nacimiento {
+  width: 80%;
+  @include responsive(tablet) {
+    width: 90%;
+  }
+}
+
+#archivo {
+  @include responsive(pc) {
+    width: 80%;
+    font-size: 0.6vw;
+  }
 }

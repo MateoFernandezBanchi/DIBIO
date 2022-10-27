@@ -53,7 +53,7 @@
           <ul class="navbar-nav">
             <h3>MENU</h3>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+              <a class="nav-link " aria-current="page" href="#">INICIO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">NUESTRA MISION</a>
@@ -64,7 +64,9 @@
             <li class="nav-item">
               <a class="nav-link ">SUCURSALES</a>
             </li>
-            <h3>CONTACTO</h3>
+            <li class="nav-item">
+              <a class="nav-link ">CONTACTO</a>
+            </li>
             <div class="iconsContainer">
               <a href="" target="_blank"><i class="fa-solid fa-location-dot icono"></i></a>
               <a href="" target="_blank"><i class="fa-brands fa-whatsapp icono"></i></a>
@@ -104,41 +106,41 @@
         <div class="infoContainer">
           <h1>CONTAMOS PROFESIONALES <span>CAPACITADOS</span></h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo officiis porro eius mollitia. Maiores et
-            maxime tenetur dicta eligendi quidem. Nihil doloremque repellat dignissimos eius aspernatur, porro quos
-            quas.
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam quod aut illo incidunt odit,
+            excepturi, impedit dolores consequuntur earum dicta magnam quae, quidem id neque dolorem esse necessitatibus
+            molestiae. Vel molestias facere consectetur laboriosam iusto.
           </p>
         </div>
         <div class="infoContainer">
           <h1>TU FAMILIA ES NUESTRA <span>PRIORIDAD</span></h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo officiis porro eius mollitia. Maiores et
-            maxime tenetur dicta eligendi quidem. Nihil doloremque repellat dignissimos eius aspernatur, porro quos
-            quas.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore distinctio saepe quisquam corporis
+            eligendi sunt vitae harum consectetur, quam fugiat ratione temporibus, eum incidunt accusantium obcaecati
+            modi libero dolorum? Est cum aut sequi illum!
           </p>
         </div>
         <div class="infoContainer">
           <h1>CAPACITADOS PARA <span>CUIDARTE</span></h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo officiis porro eius mollitia. Maiores et
-            maxime tenetur dicta eligendi quidem. Nihil doloremque repellat dignissimos eius aspernatur, porro quos
-            quas.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore distinctio saepe quisquam corporis
+            eligendi sunt vitae harum consectetur, quam fugiat ratione temporibus, eum incidunt accusantium obcaecati
+            modi libero dolorum? Est cum aut sequi illum!
           </p>
         </div>
         <div class="infoContainer">
           <h1>CONTAMOS CON LA ULTIMA <span>TECNOLOGIA</span></h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo officiis porro eius mollitia. Maiores et
-            maxime tenetur dicta eligendi quidem. Nihil doloremque repellat dignissimos eius aspernatur, porro quos
-            quas.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore distinctio saepe quisquam corporis
+            eligendi sunt vitae harum consectetur, quam fugiat ratione temporibus, eum incidunt accusantium obcaecati
+            modi libero dolorum? Est cum aut sequi illum!
           </p>
         </div>
         <div class="infoContainer">
           <h1>NUESTRO CAMINO ES LA <span>VANGUARDIA</span></h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quidem.</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo officiis porro eius mollitia. Maiores et
-            maxime tenetur dicta eligendi quidem. Nihil doloremque repellat dignissimos eius aspernatur, porro quos
-            quas.
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore distinctio saepe quisquam corporis
+            eligendi sunt vitae harum consectetur, quam fugiat ratione temporibus, eum incidunt accusantium obcaecati
+            modi libero dolorum? Est cum aut sequi illum!
           </p>
         </div>
       </div>
@@ -457,7 +459,9 @@
       <!-- INFORMACION -->
       <div class="sucursalInformacion" id="sucursalInformacion">
         <div>
-          <img src="./Assets/imagenes/casa-central-dibio 1.png" alt="casa central dibio" class="imgCentral">
+          <div class="imgCentral-container">
+            <img src="./Assets/imagenes/casa-central-dibio 1.png" alt="casa central dibio" class="imgCentral">
+          </div>
           <h4 class="sucursalTitle"> NUESTROS MEDIOS <br> DE CONTACTO</h4>
         </div>
         <div class="test">
@@ -488,8 +492,8 @@
     </section>
 
     <!--------------------------------------- CONTACTO ------------------------------------->
-    <section class="contactContainer">
-      <div>
+    <section class="contactContainer" id="contacto">
+      <div class="containerTitulo">
         <h2>MEJORAMOS LA FORMA DE <span>CONTACTO</span></h2>
         <p class="parrafoIntroContacto">Creamos el siguiente formulario de contacto para cubrir todas tus dudas y
           consultas. Te invitamos a
@@ -542,24 +546,22 @@
                 class="fa-solid fa-chevron-left"></i></button>
             <h3 class="text-center paso3">PASO 3 - ENVIE SU CONSULTA</h3>
           </div>
-          <div class="">
-            <div>
-              <input type="text" id="nombre" placeholder="NOMBRE">
-            </div>
+          <div class="contactForm__item">
+            <input type="text" id="nombre" placeholder="NOMBRE">
           </div>
-          <div class="d-flex justify-content-center">
+          <div class="d-flex justify-content-center align-items-end contactForm__item containerNacimiento">
             <div>
               <input type="number" id="dni" placeholder="DNI">
             </div>
             <div>
-              <label>FECHA DE NACIMIENTO</label>
+              <label class="labelNacimiento">FECHA DE NACIMIENTO</label>
               <input type="date" id="nacimiento" placeholder="FECHA DE NACIMIENTO">
             </div>
           </div>
-          <div>
+          <div class="contactForm__item">
             <input type="email" id="email" placeholder="MAIL">
           </div>
-          <div class="d-flex justify-content-center containerArchivo">
+          <div class="d-flex containerArchivo contactForm__item">
             <div>
               <input type="tel" id="asunto" placeholder="TELEFONO">
             </div>
@@ -568,7 +570,7 @@
               <input type="file" id="archivo">
             </div>
           </div>
-          <div>
+          <div class="contactForm__item">
             <textarea id="mensaje" rows="3" placeholder="ESCRIBA SU MENSAJE"></textarea>
           </div>
           <button class="btnContacto" type="submit">ENVIAR CONSULTA</button>
