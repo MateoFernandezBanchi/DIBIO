@@ -150,18 +150,23 @@
 }
 
 .logoNavMobile {
+  margin: 10px;
   width: 30%;
 }
 
 .navbar-nav {
-  height: 60vh;
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 70vh;
+  margin-top: 20px;
 
   li {
     .nav-link {
       margin: 0px;
       font: $subtitulo;
       font-size: 18px;
+      color: white !important;
     }
 
     width: 80%;
