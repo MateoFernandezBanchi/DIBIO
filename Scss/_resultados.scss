@@ -48,7 +48,7 @@
       margin: 0px;
       height: 55px !important;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-        -10px -10px 20px rgba(0, 0, 0, 0.25);
+        -5px -5px 20px rgba(0, 0, 0, 0.25);
       border-radius: 6px;
     }
 
@@ -70,7 +70,7 @@
       margin: 0px;
       height: 55px !important;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
-        -10px -10px 20px rgba(0, 0, 0, 0.25);
+        -5px -5px 20px rgba(0, 0, 0, 0.25);
       border-radius: 6px;
     }
 
@@ -110,7 +110,7 @@
     position: relative;
     top: 50px;
     right: 50px;
-    filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+    filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.262));
     -webkit-animation-name: circ-2;
     animation-name: nube3;
     -webkit-animation-duration: 3s;
@@ -139,7 +139,7 @@
     position: relative;
     top: 20px;
     right: 50px;
-    filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+    filter: drop-shadow(-20px -20px 10px rgba(0, 0, 0, 0.262));
 
     -webkit-animation-name: circ-2;
     animation-name: nube2;
@@ -199,7 +199,6 @@
         width: 100%;
         margin: 0;
         font-size: 3.5vw;
-        text-align: justify;
       }
 
       .containerBotonesResultadosMobile {
@@ -245,7 +244,7 @@
         position: relative;
         top: 9vh;
         right: 1vw;
-        filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+        filter: drop-shadow(7px 7px 5px rgba(0, 0, 0, 0.2));
         -webkit-animation-name: circ-2;
         animation-name: nube3Mobile;
         -webkit-animation-duration: 3s;
@@ -274,7 +273,7 @@
         position: relative;
         top: -10vh;
         right: -8vh;
-        filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+        filter: drop-shadow(-7px -7px 5px rgba(0, 0, 0, 0.2));
 
         -webkit-animation-name: circ-2;
         animation-name: nube2Mobile;
@@ -333,7 +332,6 @@
         font-size: 3vw;
         margin: 0;
         width: 100%;
-        text-align: justify;
       }
 
       .containerBotonesResultadosMobile {
@@ -377,7 +375,7 @@
         position: relative;
         top: -2vh;
         right: -2vw;
-        filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.262));
         -webkit-animation-name: circ-2;
         animation-name: nube3Mobile;
         -webkit-animation-duration: 3s;
@@ -406,7 +404,7 @@
         position: relative;
         top: -3vh;
         right: 0vh;
-        filter: drop-shadow(58px 30px 71px rgba(0, 0, 0, 0.562));
+        filter: drop-shadow(-10px -10px 10px rgba(0, 0, 0, 0.262));
 
         -webkit-animation-name: circ-2;
         animation-name: nube2Mobile;
