@@ -4,6 +4,8 @@ const Button2 = document.getElementById("sucursal2");
 const Button3 = document.getElementById("sucursal3");
 const contenedor = document.getElementById("sucursalInformacion");
 const ButtonParent = document.getElementById("sucursalBotones");
+const linkMobile = document.getElementsById("item-mobile");
+const menuCollapse = document.getElementsByClassName("navbar-toggler");
 const ButtonChildren = ButtonParent.children;
 console.log(SUCURSAL);
 
@@ -13,6 +15,12 @@ function registrarEventListeners() {
   Button1.addEventListener("click", () => addInfo(1));
   Button2.addEventListener("click", () => addInfo(2));
   Button3.addEventListener("click", () => addInfo(3));
+  linkMobile.addEventListener("click", removeCollapse);
+}
+function removeCollapse () {
+  console.log('changing menu')
+  menuCollapse.classList.add('collapsed');
+  menuCollapse.setAttribute('aria-expanded', 'false');
 }
 function addInfo(id) {
   const sucursalSelected = SUCURSAL.find((sucursal) => sucursal.id === id);
@@ -29,12 +37,7 @@ function addInfo(id) {
 }
 
 function printInfo(sucursalSelected) {
-  // const title = sucursalSelected.title;
   const {
-    id,
-    title,
-    description,
-    subTitle,
     whatsapp1,
     whatsapp2,
     direction,
@@ -42,7 +45,6 @@ function printInfo(sucursalSelected) {
     email2,
     telephone1,
     telephone2,
-    telephone3,
   } = sucursalSelected;
   const infoSucursal = document.createElement("div");
   infoSucursal.className = "test";
