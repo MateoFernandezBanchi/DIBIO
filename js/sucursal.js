@@ -42,4 +42,3 @@
         telephone3: 4422222,
     },
 ]
-console.log('probando')

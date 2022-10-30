@@ -4,8 +4,8 @@ const Button2 = document.getElementById("sucursal2");
 const Button3 = document.getElementById("sucursal3");
 const contenedor = document.getElementById("sucursalInformacion");
 const ButtonParent = document.getElementById("sucursalBotones");
-const linkMobile = document.getElementsById("item-mobile");
-const menuCollapse = document.getElementsByClassName("navbar-toggler");
+// const linkMobile = document.getElementsById("item-mobile");
+// const menuCollapse = document.getElementsByClassName("navbar-toggler");
 const ButtonChildren = ButtonParent.children;
 console.log(SUCURSAL);
 
