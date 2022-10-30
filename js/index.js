@@ -15,13 +15,13 @@ function registrarEventListeners() {
   Button1.addEventListener("click", () => addInfo(1));
   Button2.addEventListener("click", () => addInfo(2));
   Button3.addEventListener("click", () => addInfo(3));
-  linkMobile.addEventListener("click", removeCollapse);
+  // linkMobile.addEventListener("click", removeCollapse);
 }
-function removeCollapse () {
-  console.log('changing menu')
-  menuCollapse.classList.add('collapsed');
-  menuCollapse.setAttribute('aria-expanded', 'false');
-}
+// function removeCollapse () {
+//   console.log('changing menu')
+//   menuCollapse.classList.add('collapsed');
+//   menuCollapse.setAttribute('aria-expanded', 'false');
+// }
 function addInfo(id) {
   const sucursalSelected = SUCURSAL.find((sucursal) => sucursal.id === id);
   console.log(ButtonChildren);
