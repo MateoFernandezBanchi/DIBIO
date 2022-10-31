@@ -82,65 +82,9 @@
     }
   }
 }
-
-// .navDesktop {
-//   width: 100vw;
-
-//   .waveNav {
-//     width: 110vw;
-//     position: relative;
-//     bottom: 15px;
-//   }
-
-//   ul {
-//     width: 100vw;
-//     position: relative;
-//     z-index: 10;
-//     background-color: $violetPrimary;
-//     display: flex;
-//     justify-content: space-around;
-//     padding: 0;
-//     margin: 0;
-//     gap: 10px;
-//   }
-
-//   ul a {
-//     font: $texto;
-//     font-size: 16px;
-//   }
-
-//   img {
-//     width: 150px;
-//     position: relative;
-//     right: 0px;
-//     margin: 0;
-//   }
-//   .logoMenu {
-//     padding-left: 10px;
-//   }
-//   .menu {
-//     width: 60%;
-//     display: flex;
-//     justify-content: center;
-//   }
-//   .menuBotones {
-//     width: 20%;
-//     padding-right: 18%;
-//   }
-//   button {
-//     border: none;
-//     border-radius: 10px;
-//     height: 50px;
-//     padding: 15px;
-//     font-size: 16px;
-//     position: relative;
-//     left: 60px;
-//   }
-//   li {
-//     // margin-top: 15px;
-//   }
-// }
-
+.nav-link span {
+  color: white;
+}
 .navbarMobile {
   @include responsive(pc) {
     display: none;
